@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>3D Projection Engine</title>
+	<script src="3dengine.js"></script>
+	<link rel="stylesheet" href="styles.css">
+
+    <style type="text/css">
+      canvas { border: 1px solid black; }	
+    </style>
+  </head>
+<body onload="start();">
+<div class = "gameWindow">
+    <canvas id="canv" width="1150" height="750"></canvas>
+</div>
+<div class = "info">
+<h1> 3D Projection in JavaScript</h1>
+<h3><i>I am not using WebGL's 3D capabilities for this project...</i></h3>
+-instead I am using a custom 3D projection algorithm to render this. To summarize, the code in this is converting 3D coordinates to 2D ones for the 2D canvas.
+It requires all the points to be read every frame and sorted based on distance. I modified the algorithm to run better on most computers due to all the data it's crunching,
+but it means there is a loss in accuracy and the camera can't look up/down. I've also implemented a (sort of) version of shaders to differentiate water and grass.
+
+<br>You can move the camera with the WASD keys, but your movement isn't related to the direction the camera is facing.
+</div>
+<div class = "worldSettings">
+<h1> World Settings </h1>
+world size:<input type="range" min="1" max="100" value="50" class="slider" id="WorldSize"><br>
+world density:<input type="range" min="1" max="100" value="50" class="slider" id="WorldDensity"><br>
+water level:<input type="range" min="1" max="100" value="50" class="slider" id="WaterLevel"><br>
+</div>
+
+</body>
+</html>
