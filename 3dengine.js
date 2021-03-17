@@ -4,10 +4,10 @@ var CamX = 0, CamY = 0, CamZ = -45; //camera position
 var CamRX = 45; CamRY = 255; //camera rotation
 var PX = -9999,  PY = -9999; //projected vector positions
 var LPXPY = ""; //optimization for distance calculation
+var FOV = 90; //this isn't the actual field of vision, i'm too lazy to calculate that right now
 var CamXX, CamXY, CamYX, CamYY, CamZXX, CamZXY, CamZYX, CamZYY, CamYOFS;
-var dontrender; var blockDist; var BSetColor; var BSetH;
-var frames = 0; MapSize = 20; WaterLevel = 0; WorldDensity = 3;
-var VSpeed = 0;
+var dontrender; var polyDist; var BSetColor; var BSetH;	var turnSpeed = 25;
+var frames = 0; MapSize = 30; WaterLevel = 0; WorldDensity = 3; TimeScale = 25;
 
 
 
@@ -19,27 +19,29 @@ document.addEventListener('keyup', (e) => {
 	if (e.key === "a") CamY += 5; //turn left
     if (e.key === "d") CamY -= 5; //turn right
     if (e.key === "e") CamZ -= 10; //Z up
-    if (e.key === "q") if (CamZ < 0) CamZ += 10; //Z down
+    if (e.key === "q") if (CamZ < -20) CamZ += 10; //Z down
         
     render();
 });
 
-
+/*
+this generates the level, you might notice that there are 4 times as many points in render as there are here, that's because 1 point counts for 4 polys,
+you may be wondering how they all have different z positions, that is changed when the distance and color are calculated, but the (stored) position is for
+distance sorting.
+*/
 function gen() { //generates the 3D world
-
-	ws = MapSize;
-    for (var x = -ws/2; x < ws/2; x++) {
-        for (var y = -ws/2; y < ws/2; y++) {
+    for (var x = -MapSize/2; x < MapSize/2; x++) { //creating the level based on the map size
+        for (var y = -MapSize/2; y < MapSize/2; y++) {
             var z = 1;
             pointsx.push(x * 5);
             pointsy.push(y * 5);
-            pointsz.push((Math.sin((x+15)/6)+Math.sin((y+25)/6))*15);
+            pointsz.push((Math.sin((x+15)/6)+Math.sin((y+25)/6))*15); //map code
         }
     }
 }
 function render() {
-    {
-		CamRX+=0.001;
+    { //these are constants we will need for the render math, they stay the same the whole time as they are based on camera pos/rot instead of the positions of the world, so we should only calculate them once
+		CamRX+=0.003*turnSpeed/25;
         PX = -9999;
         PY = -9999;
         CamXX = Math.cos(CamRX);
@@ -51,13 +53,11 @@ function render() {
         CamZYX = -CamZXY;
         CamZYY = CamZXX;
         var lastPX = 0;
-        dist = [];
+        dist = []; //distance sorting array for later
         var dontrender = false;
     }
-	frames+=0.3;
-	CamX += Math.sin(CamRX)*VSpeed;
-    CamY += Math.cos(CamRX)*VSpeed;
-	if (LPXPY != PX+" "+PY){
+	frames+=0.3*TimeScale/25; //calculating time is too intensive, so instead i just calculate frames for the water script
+	if (LPXPY != PX+" "+PY){ //this runs the sorting script whenever the player moves, because otherwise it wastes resources/time
 	sort();
 	LPXPY = (PX+" "+PY);
 	}
@@ -68,11 +68,14 @@ function render() {
         var ctx = canvas.getContext('2d');
         ctx.clearRect(0, 0, 1150, 750);
         ctx.beginPath();
-        range = 5;
-        for (var i = 0; i < pointsx.length; i++) {
+        range = 5; //in case i want to seperate the polygons
+        for (var i = 0; i < pointsx.length; i++) { 
+		/*to make the game run faster, i have 1 point represent 4, the main issue here is that I have to have the maps be generated realtime with a
+		simple algorithm if I want the points to be connected to eachother. I will probably fix this later.
+		*/
 			BSetColor = false;
 			BSetH = null;
-			blockDist = getDist(pointsx[i], pointsy[i]);
+			polyDist = getDist(pointsx[i], pointsy[i]);
             renderPoint(pointsx[i] + range, pointsy[i] + range, pointsz[i], ctx, i);
             renderPoint(pointsx[i] + range, pointsy[i] - range, pointsz[i], ctx, i);
             renderPoint(pointsx[i], pointsy[i] - range, pointsz[i], ctx, i);
@@ -104,13 +107,25 @@ function start(){
 	WDSlider.oninput = function() {
 	  WorldDensity = ((this.value)/10);
 	}
+	WDSlider = document.getElementById("FOV");
+	WDSlider.oninput = function() {
+	  FOV = ((this.value)*2.5)+30;
+	}
+	WDSlider = document.getElementById("TurnSpeed");
+	WDSlider.oninput = function() {
+	  turnSpeed = ((this.value-50));
+	}
+	WDSlider = document.getElementById("YTilt");
+	WDSlider.oninput = function() {
+	  CamYOFS = ((this.value)-50)*5;
+	}
 	render();
 	setInterval(render, 3);
 	
 }
 function getDist(worldX, worldY, y){
 	d = 2000 / Math.sqrt(((worldX - CamX) * (worldX - CamX)) + ((worldY - CamY) * (worldY - CamY)));
-	blockDist = d;
+	polyDist = d;
 	return d;
 }
 function sort() {
@@ -153,6 +168,8 @@ function renderPoint(worldX, worldY, worldZ, ctx, index) {
         PX = v * 4;
     perspective = 100 / ((CamYX * (worldX - CamX)) + (CamYY * (worldY - CamY)));
     PY =((perspective + ((worldZ - CamZ) * perspective)) * 2) -CamYOFS;
+	PY/=(FOV/90);
+	PX/=(FOV/90);
     if (PX < -1575 || PX > 1575) {
         dontrender = false;
         ctx.beginPath()
@@ -162,7 +179,7 @@ function renderPoint(worldX, worldY, worldZ, ctx, index) {
     }
 }
 function setZ(worldX, worldY, ctx){
-	d = blockDist;
+	d = polyDist;
 	owX = worldX;
 	owY = worldY;
 	worldX*=WorldDensity;
