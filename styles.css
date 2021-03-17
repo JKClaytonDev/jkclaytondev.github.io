@@ -1,0 +1,10 @@
+.gameWindow{
+	float: left;
+}
+.worldSettings{
+	text-align: center;
+}
+.info{
+	padding: 50px;
+	text-align: center;
+}
