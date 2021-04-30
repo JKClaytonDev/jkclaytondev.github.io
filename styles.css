@@ -1,87 +1,111 @@
-h1 {
-	color: #007c91;
+
+
+body{
+	backdrop-filter: blur(0px);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 100)) no-repeat, url("img/background.gif") no-repeat;
+    background-size: cover;
+background-color: black;
+    height: 120vh;
+    padding:0;
+    margin:0;
+background-attachment: fixed;
+}
+background-image{
+	
+}
+h2{
+	text-align: center;
+	font-size: 200px;
+	color: white;
+}
+img{
+	width: 250px;
+	margin: 20px;
+}
+.gamesList{
+	overflow: auto;
+  white-space: nowrap;
+	float: middle;
+	align: center;
+	overflow: auto;
+	height: 330px;
+	  scroll-direction: horizontal;
+
+}
+.gamesList img{
+	height: 250px;
+	display: inline-block;
+	width: 460px;
+}
+.buttons button {
+	color: white;
+	float: right;
+	margin: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.buttons img{
+	width: 50px;
+	margin: 10px;
+}
+.infoText h1{
+	text-align: center;
+}
+.infoText {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+.mainText{
+	margin-top: 170px;
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+	 width: 100%;
+	 height: 100%;
+	 font-size: 160pt;
+	 font-weight: bolder;
+	 line-height: 210px;
 }
 
-body {
-	color: #008ba3;
-	background: #81b9bf;
-	font-family: Arial, Helvetica, sans-serif;
+.bg{
+	background-color: black;
 }
+.gameDesc{
+	height: 400px;
 
-.gameWindow {
-	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
 }
-
-@media (min-width:1784px) {
-	.windowParent {
-		background: #81b9bf;
-		float: left;
-		padding-bottom: 30px;
-		padding-right: 30px;
-	}
-	.worldSettings {
-		outline-style: bold;
-		text-align: center;
-		min-width: 300px;
-	}
-	.leftfl {
-		margin-right: 30px;
-		float: right;
-	}
-	.rightfl {
-		margin-left: 30px;
-		float: left;
-	}
-	a {
-		color: #004d40;
-	}
-	.info {
-		padding: 10px;
-		text-align: center;
-	}
-	.rightSide {
-		height: 765px;
-		float: center;
-		background: #80deea;
-	}
-	.controls {
-		color: #006978;
-		background: #81b9bf;
-		float: left;
-		padding: 50px;
-		padding-top: 10px;
-		max-width: 1082px;
-		font-size: 20px;
-		border-color: black;
-	}
+.nullDesc{
+	width: 0;
+	height: 0;
 }
-
-@media (max-width:1784px) {
-	.windowParent {
-		display: block;
-		width: 1150px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.rightSide {
-		width: 1150px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		height: 765px;
-		float: center;
-		background: #80deea;
-	}
-	.controls {
-		color: #006978;
-		background: #81b9bf;
-		float: left;
-		padding: 50px;
-		padding-top: 10px;
-		font-size: 20px;
-		border-color: black;
-	}
+.nullDesc img{
+	width: 0;
+	height: 0;
 }
-
-
+.nullDesc a{
+	width: 0;
+	height: 0;
+}
+.nullDesc button{
+	width: 0;
+	height: 0;
+}
+.gameDesc img{
+	float: left;
+	width: 600px;
+	height: 350px;
+}
+.gameDesc button{
+	font-size: 50px;
+	float: bottom;
+	width: 350px;
+	height: 100px;
+}
+html {
+  scroll-behavior: smooth;
 }
