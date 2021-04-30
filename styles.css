@@ -2,7 +2,7 @@
 
 body{
 	backdrop-filter: blur(0px);
-    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 100)) no-repeat, url("https://media.giphy.com/media/adWEE5F3rqiaAn3DMc/giphy.gif") no-repeat;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 100)) no-repeat, url("img/background.gif") no-repeat;
     background-size: cover;
 background-color: black;
     height: 120vh;
