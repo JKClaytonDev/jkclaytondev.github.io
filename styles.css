@@ -2,7 +2,7 @@
 
 body{
 	backdrop-filter: blur(0px);
-    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 100)) no-repeat, url("img/background.gif") no-repeat;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 100)) no-repeat, url("https://media.giphy.com/media/adWEE5F3rqiaAn3DMc/giphy.gif") no-repeat;
     background-size: cover;
 background-color: black;
     height: 120vh;
@@ -16,11 +16,23 @@ background-image{
 h2{
 	text-align: center;
 	font-size: 200px;
+	cursor:pointer;
 	color: white;
 }
 img{
 	width: 250px;
 	margin: 20px;
+}
+h2 a{
+	text-align: center;
+	font-size: 200px;
+	color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+	text-decoration: none;
+}
+h2 a:hover{
+	color: red;
 }
 .gamesList{
 	overflow: auto;
@@ -28,7 +40,7 @@ img{
 	float: middle;
 	align: center;
 	overflow: auto;
-	height: 330px;
+
 	  scroll-direction: horizontal;
 
 }
@@ -61,19 +73,32 @@ img{
 	font-size: 20px;
 }
 .mainText{
-	margin-top: 170px;
+	
 	color: transparent;
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 	 width: 100%;
-	 height: 100%;
+	 height: 28%;
 	 font-size: 160pt;
 	 font-weight: bolder;
 	 line-height: 210px;
 }
-
+@media only screen and (max-width: 1068px) {
+  .mainText{
+	
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+	 width: 100%;
+	 height: 58%;
+	 font-size: 160pt;
+	 font-weight: bolder;
+	 line-height: 210px;
+}
+}
 .bg{
 	background-color: black;
+	height:100%;
 }
 .gameDesc{
 	height: 400px;

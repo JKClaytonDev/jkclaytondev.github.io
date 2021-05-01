@@ -1,5 +1,5 @@
 function start(){
-	setText("I make video games");
+	
 
 }
 function setText(v){
@@ -16,5 +16,5 @@ function selectImage(k, i, l,t){
 	document.getElementById("playLink").href = l;
 	document.getElementById("gd").classList.remove('nullDesc');
 	document.getElementById("gd").classList.add('gameDesc');
-	window.scrollTo(0, 1500);
+	window.scrollTo(0, 750);
 }
