@@ -9,7 +9,7 @@ function PscrollTo(v){
 	window.scrollTo(0, v)
 }
 
-function selectImage(k, i, l,t){
+function selectImage(k, i, l,t,y){
 	document.getElementById("photo").src = "img/Screenshots/"+i;
 	document.getElementById("desc").innerText = t;
 	document.getElementById("title").innerText = k;
