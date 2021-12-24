@@ -46,7 +46,23 @@ h2 a:hover{
 	overflow: auto;	
   white-space: nowrap;
 }
-
+.gameBackground {
+	margin: auto;
+	width: 70%;
+	background-color: black;
+	color: white;
+}
+.gameDescription{
+	margin: 3%;
+	width: 1230px;
+}
+.gameText{
+	height: 270px;
+}
+.gameText img{
+	float: right;
+	height: 200px;
+}
 .gamesList img{
 	height: 250px;
 	display: inline-block;
