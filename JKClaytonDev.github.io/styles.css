@@ -1,0 +1,165 @@
+
+
+body{
+	backdrop-filter: blur(0px);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 100)) no-repeat, url("https://media.giphy.com/media/adWEE5F3rqiaAn3DMc/giphy.gif") no-repeat;
+    background-size: cover;
+	background-color: black;
+    height: 600;
+    padding:0;
+    
+background-attachment: fixed;
+}
+background-image{
+	
+}
+h2{
+	text-align: center;
+	font-size: 200px;
+	cursor:pointer;
+	color: white;
+}
+img{
+	width: 250px;
+	margin: 20px;
+		filter: brightness(90%);
+}
+img:hover{
+	width: 250px;
+	margin: 20px;
+		filter: brightness(150%);
+}
+h2 a{
+	text-align: center;
+	font-size: 200px;
+	color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+	text-decoration: none;
+}
+h2 a:hover{
+	color: red;
+}
+
+.gamesList{
+	
+	overflow: auto;	
+  white-space: nowrap;
+}
+.gameBackground {
+	margin: auto;
+	width: 70%;
+	background-color: black;
+	color: white;
+}
+.gameDescription{
+	margin: 3%;
+	width: 1230px;
+}
+.gameText{
+	height: 270px;
+}
+.gameText img{
+	float: right;
+	height: 200px;
+}
+.gamesList img{
+	height: 250px;
+	display: inline-block;
+	width: 460px;
+}
+.buttons button {
+	color: white;
+	float: right;
+	margin: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.buttons img{
+	width: 50px;
+	margin: 10px;
+}
+.infoText h1{
+	text-align: center;
+}
+.infoText {
+	margin-top: 320px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+.mainText{
+	
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+	 width: 100%;
+	 height: 28%;
+	 font-size: 160pt;
+	 font-weight: bolder;
+	 line-height: 210px;
+}
+@media only screen and (max-width: 1068px) {
+  .mainText{
+	
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+	 width: 100%;
+	 height: 58%;
+	 font-size: 160pt;
+	 font-weight: bolder;
+	 line-height: 210px;
+}
+}
+.bg{
+	background-color: black;
+	height:100%;
+}
+.gameDesc{
+	background-color: black;
+	height: 400px;
+
+}
+.nullDesc{
+	width: 0%;
+	height: 0%;
+}
+.nullDesc img{
+	width: 0%;
+	height: 0%;
+}
+.nullDesc a{
+	width: 0%;
+	height: 0%;
+}
+.nullDesc button{
+	width: 0%;
+	height: 0%;
+}
+.gameDesc img{
+	
+	float: left;
+	width: 600px;
+	height: 350px;
+}
+.gameDesc button{
+	font-size: 50px;
+	float: bottom;
+	width: 350px;
+	height: 100px;
+}
+.gameDesc button:hover{
+	background-color: red;
+	font-size: 50px;
+	float: bottom;
+	width: 350px;
+	height: 100px;
+}
+html {
+  scroll-behavior: smooth;
+}
