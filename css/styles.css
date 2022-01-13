@@ -1,0 +1,312 @@
+.gifs img{
+	width: 400;
+	height: 200;
+	margin-right: 0;
+	float: right;
+}
+.gifs{
+	width: 400px;
+	float: right;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.gifs iframe{
+    width: 400;
+	height: 200;
+	margin-right: 0;
+	float: right;
+}
+.ytvideo{
+	
+}
+.devinfo{
+    margin: auto;
+    text-align: center;
+}
+#gamesrotation{
+    width: 100%;
+    height: 420px;
+    background-color: #ff0000;
+    
+    overflow: visible;
+    white-space:nowrap;
+}
+
+#gamesrotation .slide {
+    display: inline-block;
+}
+#gamesrotation img {
+    width: 280px;
+}
+h3{
+    margin: 0px;
+}
+.desc{
+	margin-top: 20px;
+	margin-left: 0px;
+}
+.desc img{
+		width: 100px;
+		height: 100px;
+}
+.toptitle{
+	background-color: black;
+	color: white;
+}
+.toptitle h1{
+	font-size: 50px;
+	margin-top: 0;
+	margin-bottom: -20px;
+	margin-left: 20px;
+}
+.toptitle h2{
+	margin-left: 140px;
+}
+.toptitle img{
+	margin-right: 50px;
+	width: 100;
+	height: 70;
+	float: right;
+}
+.projinterrupt{
+float: left;
+margin-left: 200px;
+}
+.projects{
+text-align: center;
+	margin-top: -20;
+	float: center;
+	background-color: grey;
+color: grey;
+}
+.projects a{
+	font-size: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.btn{
+float: middle;
+margin-left: 500px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+body{
+	width: 1400px;
+	margin: auto;
+    backdrop-filter: blur(25px);
+}
+.leftbox{
+	margin-left: 150px;
+	width: 300px;
+	float: left;
+}
+.midbox{
+	width: 300px;
+	float: left;
+	margin-left: 100px;
+}
+.gifs img:hover {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+.rightbox{
+	margin-right: 150px;
+	width: 300px;
+	float: right;
+}
+.moreinfo{
+	margin-bottom: 300px;
+	font-size: 20px;
+}
+.persdesc{
+	margin-top: 50px;
+	font-size: 25px;
+}
+.infopage{
+    width: 1000px;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    
+    float: center;
+      margin: auto;
+    padding: 15px;
+    padding-top: 0px;
+    
+}
+.infopage h1{
+}
+.ytdesc{
+	float: right;
+	color: white;
+	width: 300px;
+	font-size: 20px;
+	margin-right: 300px;
+}
+.ytvid{
+	margin-left: 200px;
+	width: 600px;
+	float: left;
+}
+.splitproj{
+	margin-left: 70px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+.banner img{
+background-color: red;
+width: 960px;
+float: left;
+height: 239.842105261px;
+}
+@media only screen and (max-width: 1228px) {
+
+.btn{
+float: middle;
+margin-left: 400px;
+}
+.persdesc{
+	margin-top: 50px;
+	font-size: 20px;
+}
+.moreinfo h1{
+font-size: 20px;
+}
+.ytdesc{
+	float: none;
+	margin-left: 0px;
+	width: 600px;
+}
+.ytvid{
+	float: none;
+	margin-left: 0px;
+	width: 600px;
+}
+.leftbox{
+	margin-left: 0px;
+	width: 150px;
+	float: left;
+}
+.midbox{
+	width: 150px;
+	float: left;
+	margin-left: 30px;
+}
+
+.rightbox{
+	margin-right: 30px;
+	width: 150px;
+	float: right;
+}
+
+.projinterrupt{
+float: left;
+margin-left: 0px;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  text-decoration: none;
+}
+.banner img{
+background-color: red;
+width: 600px;
+height: 150px;
+}
+body{
+    font-family: sans-serif;
+	width: 600px;
+}
+.toptitle h1{
+font-size: 50px;
+margin-top: 0;
+margin-bottom: 0px;
+margin-left: 20px;
+}
+.toptitle h2{
+		font-size: 20px;
+		margin-left: 40px;
+}
+.toptitle{
+	background-color: black;
+	margin-bottom: 40px;
+	color: white;
+}
+	.toptitle img{
+		
+	margin-right: 120px;
+	width: 100;
+	height: 70;
+	margin-left: 0px;
+	float: right;
+}
+.projects{
+	margin-top: -40;
+	float: top;
+	background-color: black;
+}
+.projects a{
+	font-size: 15px;
+	margin-left: 15px;
+	margin-right: 5px;
+}
+
+.gifs img{
+	width: 150;
+	height: 100;
+	float: left;
+	margin-right: 0;
+}
+    .gifs iframe{
+	width: 150;
+	height: 100;
+	float: left;
+	margin-right: 0;
+}
+.gifs{
+	width: 600px;
+	height: 100px;
+	float: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+}
