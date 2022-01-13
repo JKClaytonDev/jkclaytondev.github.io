@@ -123,6 +123,10 @@ body{
     -webkit-transform:scale(1.2);
     transform:scale(1.2);
 }
+.slide img:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
 .rightbox{
 	margin-right: 150px;
 	width: 300px;
@@ -185,9 +189,39 @@ li a {
   text-decoration: none;
 }
 
+.scrollmenu img:hover {
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+    height: 420px;
+}
+div.scrollmenu img{
+    width: 270;
+    height: 405px;
+}
+div.scrollmenu a {
+    
+  display: inline-block;
+  color: white;
+  text-align: center;
+
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
 li a:hover {
   background-color: #111111;
 }
+
 .banner img{
 background-color: red;
 width: 960px;
@@ -242,10 +276,13 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 0px;
 	padding-top: 10px;
+    width: 100px;
+    font-size: 5px;
 	padding-bottom: 10px;
   text-decoration: none;
+    text-align: center;
+    margin: auto;
 }
 .banner img{
 background-color: red;
@@ -301,6 +338,20 @@ margin-left: 20px;
 	height: 100;
 	float: left;
 	margin-right: 0;
+}
+    .infopage{
+        width: 600px;
+    }
+div.scrollmenu {
+  overflow: scroll;
+  white-space: pre-wrap;
+  display: flex;
+  justify-content: left;
+    height: 270;
+}
+div.scrollmenu img{
+    width: 170;
+    height: 260
 }
 .gifs{
 	width: 600px;
