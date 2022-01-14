@@ -4,6 +4,15 @@
 	margin-right: 0;
 	float: right;
 }
+.contactinfo a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+.contactinfo{
+    font-style: italic;
+    font-size: 10px;
+}
 .gifs{
 	width: 400px;
 	float: right;
@@ -228,6 +237,7 @@ width: 960px;
 float: left;
 height: 239.842105261px;
 }
+
 @media only screen and (max-width: 1228px) {
 
 .btn{
@@ -359,5 +369,75 @@ div.scrollmenu img{
 	float: none;
 	margin-right: 0px;
 	margin-left: 0px;
+}
+}
+
+@media only screen and (max-width: 1225px) {
+    h1{
+        background-color: black;
+    }
+    div.scrollmenu img{
+    width: 320;
+    height: 460
+}
+    
+.banner img{
+background-color: red;
+width: 1000px;
+float: left;
+height: 239.842105261px;
+}
+    
+div.scrollmenu {
+  overflow: scroll;
+  white-space: pre-wrap;
+  display: flex;
+  justify-content: left;
+    height: 470;
+}
+    body{
+        width: 1000;
+        font-size: 20px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .infopage{
+        width: 1000px;
+        font-size: 31px
+    }
+    li a {
+  font-style: bold;
+        font-size: 25px;
+}
+    .gifs{
+        width: 1000px;
+    }
+.gifs img{
+	width: 250;
+	height: 150;
+	float: left;
+	margin-right: 0;
+}
+    .gifs iframe{
+	width: 250;
+	height: 150;
+	float: left;
+	margin-right: 0;
+}
+    .desc{
+        font-size: 23.5px
+    }
+    
+    .contactinfo a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+.contactinfo{
+    position: absolute;
+    bottom: 520;
+    font-style: italic;
+    font-size: 20px;
 }
 }
