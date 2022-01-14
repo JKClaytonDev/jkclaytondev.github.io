@@ -58,9 +58,30 @@ h3{
 		width: 100px;
 		height: 100px;
 }
+.topbar{
+    	background-color: black;
+
+}
+.header p{
+    text-decoration: none;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+}
+.topbar a{
+    position: absolute;
+  right: 10;
+    top: 10;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: grey;
+    text-align: center;
+  width: 160px;
+}
 .toptitle{
-	background-color: black;
 	color: white;
+    width: 500px;
 }
 .toptitle h1{
 	font-size: 50px;
