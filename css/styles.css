@@ -62,11 +62,31 @@ h3{
     	background-color: black;
 
 }
+.blockquote{
+    float: left;
+}
+.castillolinks ul{
+    background-color: transparent;
+}
+blockquote{
+    width: 300px;
+}
+.castillolinks ul li {
+    float: left;
+
+    margin-right: 5%;
+}
+
+.castillolinks ul li.right {
+    margin-right: 0;
+}
+
 .header p{
     text-decoration: none;
     font-style: normal;
     text-align: center;
     font-size: 20px;
+    
 }
 .topbar a{
     position: absolute;
