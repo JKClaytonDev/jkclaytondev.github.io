@@ -25,9 +25,6 @@
 	margin-right: 0;
 	float: right;
 }
-.ytvideo{
-	
-}
 .devinfo{
     margin: auto;
     text-align: center;
@@ -412,6 +409,9 @@ div.scrollmenu img{
 	margin-left: 0px;
 }
 }
+
+
+
 
 @media only screen and (max-width: 1225px) {
     h1{
