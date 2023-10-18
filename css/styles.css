@@ -220,7 +220,7 @@ body{
 .splitproj{
 	margin-left: 70px;
 }
-ul {
+.projects ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -228,11 +228,11 @@ ul {
   background-color: grey;
 }
 
-li {
+.projects li {
   float: left;
 }
 
-li a {
+.projects li a {
   display: block;
   color: white;
   text-align: center;
