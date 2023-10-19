@@ -12,6 +12,7 @@
     float: right;
     text-align: right;
     width: 250px;
+    margin-top: 380px;
 }
 
   .topImage {
@@ -476,7 +477,7 @@ li a:hover {
 
 @media only screen and (max-width: 1225px) {
     .topbar {
-        background-color: red;
+        background-color: black;
         width: 1088;
         height: 240;
     }
