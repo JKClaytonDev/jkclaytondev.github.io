@@ -476,6 +476,10 @@ li a:hover {
 
 
 @media only screen and (max-width: 1225px) {
+    .roles ul{
+        list-style-type: none;
+    }
+
     .topbar {
         background-color: black;
         width: 1088;
