@@ -8,13 +8,21 @@
 
 .contactinfo {
     font-style: italic;
-    font-size: 20px;
+    font-size: 15px;
     float: right;
     text-align: right;
     width: 250px;
     margin-top: 380px;
 }
 
+.contactinfomain {
+    font-style: italic;
+    font-size: 20px;
+    float: right;
+    text-align: right;
+    width: 250px;
+    margin-top: -380px;
+}
   .topImage {
     border-right: solid 4px black;
   }
@@ -34,12 +42,28 @@
     float: right;
     
 }
-
+h1{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 .devinfo {
     margin: auto;
     text-align: center;
+    font-family: proxima-nova, sans-serif;
+font-weight: 100;
+font-style: normal;
 }
-
+a{
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.infopage{
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
 #gamesrotation {
     width: 100%;
     height: 420px;
@@ -60,12 +84,19 @@
 h3 {
     margin: 0px;
 }
-
+p{
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
 .desc {
     width: 680px;
-    font-size: 23px;
+    font-size: 21px;
     margin-top: 20px;
     margin-left: 0px;
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
 }
 
 .desc ul {
@@ -134,10 +165,16 @@ blockquote {
     margin-top: 0;
     margin-bottom: -20px;
     margin-left: 20px;
+    font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 
 .toptitle h2 {
     margin-left: 140px;
+    font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 
 .toptitle img {
@@ -237,9 +274,13 @@ body {
     padding: 15px;
     padding-top: 0px;
 
+    font-family: proxima-nova, sans-serif;
+font-weight: 100;
+font-style: normal;
+
+
 }
 
-.infopage h1 {}
 
 .ytdesc {
     float: right;
