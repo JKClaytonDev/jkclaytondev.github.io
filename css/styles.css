@@ -1,9 +1,4 @@
-.gifs img {
-    width: 650;
-    height: 360;
-    margin-right: 0;
-    float: right;
-}
+
 
 .contactinfo a {
     color: white;
@@ -19,18 +14,24 @@
     width: 250px;
 }
 
+  .topImage {
+    border-right: solid 4px black;
+  }
 .gifs {
-    width: 400px;
+    width: 650;
     float: right;
-    margin-right: 20px;
-    margin-left: 20px;
 }
-
+.gifs img{
+    width: 650;
+    height: 370;
+    margin-top: 370;
+}
 .gifs iframe {
     width: 650;
-    height: 360;
+    height: 370;
     margin-right: 0;
     float: right;
+    
 }
 
 .devinfo {
@@ -139,7 +140,6 @@ blockquote {
 }
 
 .toptitle img {
-    margin-right: 50px;
     width: 100;
     height: 70;
     float: right;
@@ -436,18 +436,12 @@ li a:hover {
         margin-right: 5px;
     }
 
-    .gifs img {
-        width: 150;
-        height: 100;
-        float: left;
-        margin-right: 0;
-    }
+
 
     .gifs iframe {
         width: 150;
         height: 100;
-        float: left;
-        margin-right: 0;
+        float: right;
     }
 
     .infopage {
@@ -483,7 +477,7 @@ li a:hover {
 @media only screen and (max-width: 1225px) {
     .topbar {
         background-color: black;
-        width: 1070;
+        width: 1088;
         height: 240;
     }
 
@@ -506,8 +500,9 @@ li a:hover {
         white-space: pre-wrap;
         display: flex;
         justify-content: left;
-        width: 1070;
+        width: 1088;
         height: 900;
+        overflow-y: hidden;
     }
 
     body {
@@ -533,20 +528,15 @@ li a:hover {
         width: 1000px;
     }
 
-    .gifs img {
-        width: 0;
-        height: 0;
-        margin-right: 0;
-    }
 
     .gifs iframe {
-        width: 1070;
+        width: 1088;
         height: 600;
         margin-right: 0;
     }
 
     .desc {
-        width: 1055px;
+        width: 1088px;
         font-size: 53px
     }
 
@@ -583,7 +573,7 @@ li a:hover {
         font-size: 0px;
     }
     .projects ul {
-        width: 1070;
+        width: 1088;
     }
 
     .projects li {
@@ -612,11 +602,11 @@ li a:hover {
 
     .topbar h1{
         font-size: 100;
-        width: 1050;
+        width: 900;
     }
     .topbar h2{
         font-size: 40;
-        width: 1050;
+        width: 900;
         background-color: red;
         height: 0;
     }

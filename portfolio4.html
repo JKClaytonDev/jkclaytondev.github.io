@@ -8,72 +8,170 @@
 </head>
 <body>
 
-<style>
-body  {
-    font-family: sans-serif;
-  background-image: url("img/myth/bg.png");
-   background-repeat: no-repeat;
-   color: white;
-   background-size: cover;
-}
-</style>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url("img/myth/bg.png");
+            background-repeat: no-repeat;
+            color: white;
+            background-size: cover;
+        }
+    </style>
 
 
-<div class = "topbar">
-    
-  <div class = "toptitle">
-  <a href = "about.html">Resume/Contact</a>    
-  
-  <h1>Jackson Clayton</h1>
-  <h2>Game Portfolio</h2>
-      
-  
-      
-  </div>
-  </div>
-<div class = "projects">
-<div class = "projinterrupt">
-</div>
-<ul>
-<li><a href="index.html">Home</a></li>
- <li><a href="portfolio1.html">HyperJustice</a></li>
-  <li><a href="portfolio2.html">Flying Frags</a></li>
-<li><a href="portfolio5.html">Nine Circles</a></li>
-  <li><a href="portfolio3.html">Castillo</a></li>
-    <li><a href="portfolio4.html">Al Fredo</a></li>
-</ul>
-</div>
-<div class = "banner">
-  <a href = "https://gamejolt.com/games/myth2/647087"><img src="img/myth/banner.png"></a>
-</div>
-<div class = "gifs">
-  <iframe src="https://www.youtube.com/embed/videoseries?si=mpVmrQq9PC6ewIxW&amp;list=PLo1PT3AVEADHV6XIpCH18LvlUa7oz6ow0&autoplay=1&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <img src="img/castillo/img3.png">
-  <div class = "contactinfo">
-    Jackson Kenneth Clayton<br>
-    <a href="mailto:claytoj4@miamioh.edu">claytoj4@miamioh.edu<a><br>
-    <a href="tel:703-225-8662">703-225-8662</a>
+    <div class="topbar">
+
+        <div class="toptitle">
+            <a href="about.html">Resume/Contact</a>
+
+            <h1>Jackson Clayton</h1>
+            <h2>Game Portfolio</h2>
+
+
+
+        </div>
     </div>
-</div>
-<div class = "desc"><div class = "roles">
-  <ul>
+    <div class="projects">
+        <div class="projinterrupt">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio2.html">Flying Frags</a></li>
+              <li><a href="portfolio1.html">HyperJustice</a></li>
+              <li><a href="portfolio3.html">Castillo</a></li>
+                <li><a href="portfolio4.html">Al Fredo</a></li>
+                <li><a href="portfolio5.html">Nine Circles</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <a href="https://gamejolt.com/games/myth2/647087"><img src="img/myth/banner.png"></a>
+    </div>
+    <div class="gifs">
+        <iframe src="https://www.youtube.com/embed/videoseries?si=mpVmrQq9PC6ewIxW&amp;list=PLo1PT3AVEADHV6XIpCH18LvlUa7oz6ow0&autoplay=1&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <style>
+            * {box-sizing: border-box;}
+            .img-comp-container {
+              position: relative;
+              height: 200px; 
+            }
+            .img-comp-img {
+              position: absolute;
+              width: auto;
+              height: auto;
+              overflow:hidden;
+            }
+            .img-comp-img img {
+              display:block;
+              vertical-align:middle;
+            }
+            .img-comp-slider {
+              position: absolute;
+              z-index:9;
+              cursor: ew-resize;
+              width: 40px;
+              height: 40px;
+              background-color: #2196F3;
+              opacity: 0.7;
+              border-radius: 50%;
+              margin-top: 185px;
+            }
+            </style>
+            <script>
+            function initComparisons() {
+              var x, i;
+              x = document.getElementsByClassName("img-comp-overlay");
+              for (i = 0; i < x.length; i++) {
+                compareImages(x[i]);
+              }
+              function compareImages(img) {
+                var slider, img, clicked = 0, w, h;
+                w = img.offsetWidth;
+                h = img.offsetHeight;
+                img.style.width = (w / 2) + "px";
+                slider = document.createElement("DIV");
+                slider.setAttribute("class", "img-comp-slider");
+                img.parentElement.insertBefore(slider, img);
+                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+                slider.addEventListener("mousedown", slideReady);
+                window.addEventListener("mouseup", slideFinish);
+                slider.addEventListener("touchstart", slideReady);
+                window.addEventListener("touchend", slideFinish);
+                function slideReady(e) {
+                  e.preventDefault();
+                  clicked = 1;
+                  window.addEventListener("mousemove", slideMove);
+                  window.addEventListener("touchmove", slideMove);
+                }
+                function slideFinish() {
+                  clicked = 0;
+                }
+                function slideMove(e) {
+                  var pos;
+                  if (clicked == 0) return false;
+                  pos = getCursorPos(e)
+                  if (pos < 0) pos = 0;
+                  if (pos > w) pos = w;
+                  slide(pos);
+                }
+                function getCursorPos(e) {
+                  var a, x = 0;
+                  e = (e.changedTouches) ? e.changedTouches[0] : e;
+                  a = img.getBoundingClientRect();
+                  x = e.pageX - a.left;
+                  x = x - window.pageXOffset;
+                  return x;
+                }
+                function slide(x) {
+                  img.style.width = x + "px";
+                  slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+                }
+              }
+            }
+            </script>
+            <div class="img-comp-container">
+              <div class="img-comp-img">
+                <img src="img/sliders/alfredonew.png" width="300" height="200">
+              </div>
+              <div class="img-comp-img img-comp-overlay">
+                <img src="img/sliders/alfredoold.png" width="300" height="200">
+              </div>
+            </div>
+            <script>
+            initComparisons();
+            </script>
+        <div class="contactinfo">
+            Jackson Kenneth Clayton<br>
+            <a href="mailto:claytoj4@miamioh.edu">
+                claytoj4@miamioh.edu<a>
+                    <br>
+                    <a href="tel:703-225-8662">703-225-8662</a>
+        </div>
+    </div>
+    <div class="desc">
+        <div class="roles">
+            <ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <li>Lead Game Designer</li>
+                <li>Project Manager</li>
+            </ul>
+        </div>
+        I worked in the AL & FREDO’S OPENING DAY team as a lead game designer, the goal was to create a game in 2 months to present at the the ETBD Expo. Our team created an PVP Twist on 80's Arcade Maze Games specifically designed to be played on two Atari Joysticks.<n>
+            <br><br><b>Responsibilities:</b><ul>
+                <li>Effectively managed a group and identified and communicated deadline risks to reevaluate project scope. Mentored a game designer on practices and provided feedback.</li>
+                <li>Implemented classes to diversify gameplay along with adding in a dynamic player profile status so players don’t have to read the scoreboard mid-match.</li>
+                <li>Use game segmentation to individually introduce and then mix two enemy types.</li>
+                <li>Programmed a scoreboard that displays on an external tablet. Ported the game to the Google Play Store.</li>
+            </ul>
+            Links:
+            <a style="color:rgb(137, 175, 187);" href="https://thesmashers.itch.io/alfredogame" target="_blank">Itch.io</a>
+            <a style="color:rgb(137, 175, 187);" href="https://play.google.com/store/apps/details?id=com.MiamiUniversity.AlFredoOpeningDay" target="_blank">Google Play</a>
+            <a style="color:rgb(137, 175, 187);" href="https://github.com/JKClaytonDev/AlFredo" target="_blank">GitHub</a>
+    </div>
     <br>
     <br>
-    <br>
-    <br>
-    <li>Lead Game Designer</li>
-    <li>Project Manager</li></ul></div>
-I worked in the AL & FREDO’S OPENING DAY team as a lead game designer, the goal was to create a game in 2 months to present at the the ETBD Expo. Our team created an PVP Twist on 80's Arcade Maze Games specifically designed to be played on two Atari Joysticks.<n>
-  <br><br><b>Responsibilities:</b><ul>
-<li>Effectively managed a group and identified and communicated deadline risks to reevaluate project scope. Mentored a game designer on practices and provided feedback.</li>
-<li>Implemented classes to diversify gameplay along with adding in a dynamic player profile status so players don’t have to read the scoreboard mid-match.</li>
-<li>Use game segmentation to individually introduce and then mix two enemy types.</li>
-<li>Programmed a scoreboard that displays on an external tablet. Ported the game to the Google Play Store.</li>
-</ul>
-Links:
-<a style="color:rgb(137, 175, 187);" href = "https://thesmashers.itch.io/alfredogame" target="_blank">Itch.io</a>
-<a style="color:rgb(137, 175, 187);" href = "https://play.google.com/store/apps/details?id=com.MiamiUniversity.AlFredoOpeningDay" target="_blank">Google Play</a>
-<a style="color:rgb(137, 175, 187);" href = "https://github.com/JKClaytonDev/AlFredo" target="_blank">GitHub</a>
-</div>
 </body>
 </html>

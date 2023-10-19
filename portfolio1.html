@@ -40,11 +40,11 @@ body  {
 </div>
 <ul>
 <li><a href="index.html">Home</a></li>
+<li><a href="portfolio2.html">Flying Frags</a></li>
   <li><a href="portfolio1.html">HyperJustice</a></li>
-  <li><a href="portfolio2.html">Flying Frags</a></li>
-<li><a href="portfolio5.html">Nine Circles</a></li>
   <li><a href="portfolio3.html">Castillo</a></li>
     <li><a href="portfolio4.html">Al Fredo</a></li>
+    <li><a href="portfolio5.html">Nine Circles</a></li>
 </ul>
 </div>
 <div class = "banner">
@@ -53,7 +53,99 @@ body  {
 <div class = "gifs">
 
 <iframe src="https://www.youtube.com/embed/videoseries?si=95fO4siMWTMvL2Qg&amp;list=PLo1PT3AVEADF5sM49_knvO7b5TETZGIgE&autoplay=1&loop=1&mute=1&start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<img src="img/hyperjustice/img2.png">
+<style>
+  * {box-sizing: border-box;}
+  .img-comp-container {
+    position: relative;
+    height: 200px; 
+  }
+  .img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+  }
+  .img-comp-img img {
+    display:block;
+    vertical-align:middle;
+  }
+  .img-comp-slider {
+    position: absolute;
+    z-index:9;
+    cursor: ew-resize;
+    width: 40px;
+    height: 40px;
+    background-color: #2196F3;
+    opacity: 0.7;
+    border-radius: 50%;
+    margin-top: 185px;
+  }
+  </style>
+  <script>
+  function initComparisons() {
+    var x, i;
+    x = document.getElementsByClassName("img-comp-overlay");
+    for (i = 0; i < x.length; i++) {
+      compareImages(x[i]);
+    }
+    function compareImages(img) {
+      var slider, img, clicked = 0, w, h;
+      w = img.offsetWidth;
+      h = img.offsetHeight;
+      img.style.width = (w / 2) + "px";
+      slider = document.createElement("DIV");
+      slider.setAttribute("class", "img-comp-slider");
+      img.parentElement.insertBefore(slider, img);
+      slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+      slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+      slider.addEventListener("mousedown", slideReady);
+      window.addEventListener("mouseup", slideFinish);
+      slider.addEventListener("touchstart", slideReady);
+      window.addEventListener("touchend", slideFinish);
+      function slideReady(e) {
+        e.preventDefault();
+        clicked = 1;
+        window.addEventListener("mousemove", slideMove);
+        window.addEventListener("touchmove", slideMove);
+      }
+      function slideFinish() {
+        clicked = 0;
+      }
+      function slideMove(e) {
+        var pos;
+        if (clicked == 0) return false;
+        pos = getCursorPos(e)
+        if (pos < 0) pos = 0;
+        if (pos > w) pos = w;
+        slide(pos);
+      }
+      function getCursorPos(e) {
+        var a, x = 0;
+        e = (e.changedTouches) ? e.changedTouches[0] : e;
+        a = img.getBoundingClientRect();
+        x = e.pageX - a.left;
+        x = x - window.pageXOffset;
+        return x;
+      }
+      function slide(x) {
+        img.style.width = x + "px";
+        slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+      }
+    }
+  }
+  </script>
+  <div class="img-comp-container">
+    <div class="img-comp-img">
+      <img src="img/sliders/hyperjusticenew.png" width="300" height="200">
+    </div>
+    <div class="img-comp-img img-comp-overlay">
+      <img src="img/sliders/hyperjusticeold.png" width="300" height="200">
+    </div>
+  </div>
+  <script>
+  initComparisons();
+  </script>
+
 <div class = "contactinfo">
   Jackson Kenneth Clayton<br>
   <a href="mailto:claytoj4@miamioh.edu">claytoj4@miamioh.edu<a><br>
@@ -61,30 +153,34 @@ body  {
   </div>
 
 </div>
-<div class = "desc"><div class = "roles">
-  <ul>
+
+<div class="desc">
+    <div class="roles">
+        <ul>
+            <br>
+            <br>
+            <br>
+            <li>Level/Game Designer</li>
+            <li>Programmer</li>
+            <li>Lighting/Environment Artist</li>
+            <li>Project Manager</li>
+        </ul>
+    </div>
+    I worked alongside the HYPERJUSTICE team to complete this “anti-bullet time” third person shooter autorunner during the 90 Day To Ship It Jam. After, we added a custom map editor and shipped the game on Steam. I worked as a programmer and gameplay, level, and lighting designer.
+    <br><br><b>Responsibilities:</b>
+    <ul>
+        <li>Shipped on Steam with a small team utilizing Trello for task management.</li>
+        <li>Level design rewards speed and reaction time while emphasizing the level specific weapon’s attributes. Bounceable grenades reward creative thinking. Lighting temperature and range signify local gameplay scenarios, with light drafts acting as foreshadowing.</li>
+        <li>Worked alongside a narrative designer and concept artist when decorating environments.</li>
+        <li>Incorporated a style boost mechanic for dodging bullets, rewarding speed and variety.</li>
+    </ul>
+    <br>
+    Links:
+    <a style="color:rgb(137, 175, 187);" href="https://store.steampowered.com/app/1516960/Flying_Frags_World_Tour/?curator_clanid=41655829" target="_blank">Steam</a>
+    <a style="color:rgb(137, 175, 187);" href="https://drive.google.com/uc?export=download&id=1SCGE7XD0TrAJ-ZIS8nMOqF6GZicXdm7D" target="_blank">Drive</a>
+    <a style="color:rgb(137, 175, 187);" href="https://github.com/JKClaytonDev/FFWTSteam" target="_blank">GitHub</a>
     <br>
     <br>
-    <br>
-    <li>Level/Game Designer</li>
-    <li>Programmer</li>
-    <li>Lighting/Environment Artist</li>
-    <li>Project Manager</li></ul>
-  </div>
-I worked alongside the HYPERJUSTICE team to complete this “anti-bullet time” third person shooter autorunner during the 90 Day To Ship It Jam. After, we added a custom map editor and shipped the game on Steam. I worked as a programmer and gameplay, level, and lighting designer.
-<br><br><b>Responsibilities:</b>
-<ul>
-<li>Shipped on Steam with a small team utilizing Trello for task management.</li>
-<li>Level design rewards speed and reaction time while emphasizing the level specific weapon’s attributes. Bounceable grenades reward creative thinking. Lighting temperature and range signify local gameplay scenarios, with light drafts acting as foreshadowing.</li>
-<li>Worked alongside a narrative designer and concept artist when decorating environments.</li>
-<li>Incorporated a style boost mechanic for dodging bullets, rewarding speed and variety.</li>
-</ul>
-<br>
-Links:
-<a style="color:rgb(137, 175, 187);" href = "https://store.steampowered.com/app/1516960/Flying_Frags_World_Tour/?curator_clanid=41655829" target="_blank">Steam</a>
-<a style="color:rgb(137, 175, 187);" href = "https://drive.google.com/uc?export=download&id=1SCGE7XD0TrAJ-ZIS8nMOqF6GZicXdm7D" target="_blank">Drive</a>
-<a style="color:rgb(137, 175, 187);" href = "https://github.com/JKClaytonDev/FFWTSteam" target="_blank">GitHub</a>
-<br>
 </div>
 </body>
 </html>
