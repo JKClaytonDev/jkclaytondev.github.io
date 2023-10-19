@@ -476,7 +476,7 @@ li a:hover {
 
 @media only screen and (max-width: 1225px) {
     .topbar {
-        background-color: black;
+        background-color: red;
         width: 1088;
         height: 240;
     }
@@ -506,7 +506,7 @@ li a:hover {
     }
 
     body {
-        width: 1000;
+        width: 1088;
         font-size: 40px;
     }
 
@@ -525,18 +525,18 @@ li a:hover {
     }
 
     .gifs {
-        width: 1000px;
+        width: 1088px;
     }
 
 
     .gifs iframe {
         width: 1088;
-        height: 600;
-        margin-right: 0;
+        height: 612;        
     }
 
     .desc {
-        width: 1088px;
+        width: 1000px;
+        margin: 44px;
         font-size: 53px
     }
 
@@ -580,7 +580,7 @@ li a:hover {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        width: 350px;
+        width: 362.5px;
         text-align: center;
         font-size: 250px;
         height: 50;
@@ -596,7 +596,7 @@ li a:hover {
     .projects a {
         font-size: 35px;
         margin-left: 0;
-        width: 350px;
+        width: 362.5px;
         margin-right: 0;
     }
 
@@ -607,7 +607,7 @@ li a:hover {
     .topbar h2{
         font-size: 40;
         width: 900;
-        background-color: red;
+        background-color: black;
         height: 0;
     }
 
@@ -628,4 +628,5 @@ li a:hover {
     .header p{
         font-size: 40px;
     }
+
 }
