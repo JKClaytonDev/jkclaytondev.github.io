@@ -68,6 +68,9 @@ h1{
 font-weight: 100;
 font-style: normal;
 }
+.links{
+    font-size: 40;
+}
 a{
     font-family: proxima-nova, sans-serif;
 font-weight: 300;
