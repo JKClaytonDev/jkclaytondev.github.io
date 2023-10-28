@@ -81,6 +81,11 @@ font-style: normal;
 font-weight: 300;
 font-style: normal;
 }
+.gamebreakdown h2{
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 #gamesrotation {
     width: 100%;
     height: 420px;
@@ -117,11 +122,32 @@ font-style: normal;
 font-weight: 300;
 font-style: normal;
 }
-
+.gamebreakdown{
+    padding: 10px;
+    background-color:rgba(38, 36, 36, 0.8);
+    width: 1400px;
+    font-size: 21px;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
 .desc ul {
     color: white;
 }
-
+.gamebreakdown .gifs{
+    padding: 0px;
+    margin-top: -10px;
+    height: 366px;
+}
+.gamebreakdown .gifs iframe{
+    .gifs iframe {
+        width: 150;
+        height: 0;
+        float: right;
+    }
+}
 .desc img {
     width: 100px;
     height: 100px;
@@ -623,13 +649,31 @@ li a:hover {
         margin: 44px;
         font-size: 53px
     }
-
+    .gamebreakdown{
+        width: 1000px;
+            margin: 44px;
+            font-size: 40px
+    }
+    .gamebreakdown h2{
+        font-size: 50px;
+    }
+    .gamebreakdown .gifs {
+        width: 980px;
+        margin: 0px;
+    }
+    .gamebreakdown iframe{
+        width: 980px;
+        margin: 0px;
+    }
     .desc ul {
         font-size: 40;
     }
     .roles{
         width: 500px;
         
+    }
+    .gamebreakdown h1{
+        font-size: 75px;
     }
 
     .roles ul {
