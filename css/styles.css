@@ -36,6 +36,7 @@ table {
     width: 250px;
     margin-top: -380px;
 }
+
   .topImage {
     border-right: solid 4px black;
   }
@@ -48,6 +49,17 @@ table {
     height: 370;
     margin-top: 390;
 }
+
+.envirogifs {
+    width: 650;
+    float: right;
+}
+.envirogifs img{
+    width: 650;
+    height: 370;
+    margin-top: 15;
+}
+
 .gifs iframe {
     margin-top: 20;
     width: 650;
@@ -115,6 +127,17 @@ font-style: normal;
     padding: 10px;
     background-color:rgba(38, 36, 36, 0.8);
     width: 680px;
+    font-size: 21px;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.envirodesc {
+    padding: 10px;
+    background-color:rgba(38, 36, 36, 0.8);
+    width: 100%;
     font-size: 21px;
     margin-top: 20px;
     margin-left: 0px;
@@ -235,6 +258,7 @@ font-style: normal;
 font-weight: 100;
 font-style: normal;
 }
+
 
 .toptitle img {
     width: 100;
@@ -392,17 +416,29 @@ div.scrollmenu {
     height: 410px;
 }
 
+div.enviroscrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    height: 510px;
+}
+
 div.scrollmenu img {
     width: 270;
     height: 405px;
+}
+
+div.enviroscrollmenu img {
+    
+    width: 720px;
+    height: 486px;
 }
 
 div.scrollmenu a {
 
     display: inline-block;
     color: white;
-    text-align: center;
-
     text-decoration: none;
 }
 
@@ -430,7 +466,11 @@ li a:hover {
     .desc {
         font-size: 100px;
     }
-
+    .projects .hidemobile{
+        display: none;
+        width: 0px;
+    }
+    
     .btn {
         float: middle;
         margin-left: 400px;
@@ -575,9 +615,15 @@ li a:hover {
         margin-left: 0px;
     }
 
+    .envirogifs {
+        width: 600px;
+        height: 100px;
+        float: none;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
 }
-
-
 
 
 @media only screen and (max-width: 1225px) {
@@ -614,7 +660,11 @@ li a:hover {
         height: 900;
         overflow-y: hidden;
     }
-
+    .projects .hidemobile{
+        display: none;
+        width: 0px;
+    }
+    
     body {
         width: 1088;
         font-size: 40px;
@@ -638,6 +688,24 @@ li a:hover {
         width: 1088px;
     }
 
+    .envirogifs {
+        width: 1088px;
+        height: 500px;
+    }
+    .hidemobile {
+        display:none;
+        width: 0px;
+    }
+    .hidemobile a {
+        width: 0px;
+    }
+    .hidemobile ul {
+        width: 0px;
+    }
+    .envirogifs img{
+        width: 1088px;
+        height: 500px;
+    }
 
     .gifs iframe {
         width: 1088;
