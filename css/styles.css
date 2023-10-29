@@ -627,6 +627,7 @@ li a:hover {
 
 
 @media only screen and (max-width: 1225px) {
+
     .roles ul{
         list-style-type: none;
     }
@@ -834,5 +835,4 @@ li a:hover {
     .header p{
         font-size: 40px;
     }
-
 }
