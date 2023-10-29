@@ -5,14 +5,27 @@
     text-decoration: none;
     font-style: italic;
 }
-
+.desc ul{
+    margin-top: 0px;
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     table-layout: fixed;
   }
-  
+  .iterationtitle{
+    margin: 0px;
+    font-family: "futura-pt", sans-serif;
+    color: black;
+    background-color: #777;
+  }
+  .iterationtitle h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
   td, th {
     border: 0px solid #dddddd;
     text-align: center;
@@ -96,7 +109,12 @@ font-style: normal;
 .gamebreakdown h2{
     margin: 0px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+.gamebreakdown b{
+    font-size: 20px;
+    font-family: "futura-pt", sans-serif;
 }
 #gamesrotation {
     width: 100%;
