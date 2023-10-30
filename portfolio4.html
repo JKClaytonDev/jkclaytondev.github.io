@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Environment Art | Jackson Clayton - Game Portfolio</title>
+  <title>AL FREDO | Jackson Clayton - Game Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -39,40 +39,172 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio5.html">Nine Circles</a></li>
-          
+          <li><a href="portfolio4.html">Al Fredo</a></li>
           <li><a href="portfolio3.html">Castillo</a></li>
           <li><a href="portfolio1.html">HyperJustice</a></li>
           <li><a href="portfolio2.html">Flying Frags</a></li>
-          <li class = "hidemobile"><a>|</a></li>
-          <li><a href="portfolio4.html">Environment Art</a></li>
         </ul>
     </div>
     <div class="banner">
+        <img src="img/myth/banner.png">
     </div>
-
+    <div class="gifs">
+        <iframe src="https://www.youtube.com/embed/videoseries?si=mpVmrQq9PC6ewIxW&amp;list=PLo1PT3AVEADHV6XIpCH18LvlUa7oz6ow0&autoplay=1&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <style>
+            * {box-sizing: border-box;}
+            .img-comp-container {
+              position: relative;
+              height: 200px; 
+            }
+            .img-comp-img {
+              position: absolute;
+              width: auto;
+              height: auto;
+              overflow:hidden;
+            }
+            .img-comp-img img {
+              display:block;
+              vertical-align:middle;
+            }
+            .img-comp-slider {
+              position: absolute;
+              z-index:9;
+              cursor: ew-resize;
+              width: 40px;
+              height: 40px;
+              background-color: #2196F3;
+              opacity: 0.7;
+              border-radius: 50%;
+              margin-top: 185px;
+            }
+            @media only screen and (max-width: 1225px) {
+  * {box-sizing: border-box;}
+  .img-comp-container {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-img {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-img img {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-slider {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  }
+            </style>
+            <script>
+            function initComparisons() {
+              var x, i;
+              x = document.getElementsByClassName("img-comp-overlay");
+              for (i = 0; i < x.length; i++) {
+                compareImages(x[i]);
+              }
+              function compareImages(img) {
+                var slider, img, clicked = 0, w, h;
+                w = img.offsetWidth;
+                h = img.offsetHeight;
+                img.style.width = (w / 2) + "px";
+                slider = document.createElement("DIV");
+                slider.setAttribute("class", "img-comp-slider");
+                img.parentElement.insertBefore(slider, img);
+                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+                slider.addEventListener("mousedown", slideReady);
+                window.addEventListener("mouseup", slideFinish);
+                slider.addEventListener("touchstart", slideReady);
+                window.addEventListener("touchend", slideFinish);
+                function slideReady(e) {
+                  e.preventDefault();
+                  clicked = 1;
+                  window.addEventListener("mousemove", slideMove);
+                  window.addEventListener("touchmove", slideMove);
+                }
+                function slideFinish() {
+                  clicked = 0;
+                }
+                function slideMove(e) {
+                  var pos;
+                  if (clicked == 0) return false;
+                  pos = getCursorPos(e)
+                  if (pos < 0) pos = 0;
+                  if (pos > w) pos = w;
+                  slide(pos);
+                }
+                function getCursorPos(e) {
+                  var a, x = 0;
+                  e = (e.changedTouches) ? e.changedTouches[0] : e;
+                  a = img.getBoundingClientRect();
+                  x = e.pageX - a.left;
+                  x = x - window.pageXOffset;
+                  return x;
+                }
+                function slide(x) {
+                  img.style.width = x + "px";
+                  slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+                }
+              }
+            }
+            </script>
+            <div class="img-comp-container">
+              <div class="img-comp-img">
+                <img src="img/sliders/alfredonew.png" width="300" height="200">
+              </div>
+              <div class="img-comp-img img-comp-overlay">
+                <img src="img/sliders/alfredoold.png" width="300" height="200">
+              </div>
+            </div>
+            <script>
+            initComparisons();
+            </script>
+        <div class="contactinfo">
+            Jackson Kenneth Clayton<br>
+            <a href="mailto:claytoj4@miamioh.edu">
+                claytoj4@miamioh.edu<a>
+                    <br>
+                    <a href="tel:703-225-8662">703-225-8662</a>
+        </div>
+    </div>
     
-        <div class="envirodesc">
-          <h1>UNDERWATER RESEARCH FACILITY</h1>
-          Futuristic underwater facility. I love both futuristic and underwater environments in sci-fi and fiction, so I thought I'd try to make my own. Made in Unreal Engine 5. All of the texture work, models, scene assembly and lighting were done by me.
+        <div class="desc">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+          <br><br><br><br>
+          <i>TLDR: Group project shipped to Google Play, arcade maze game</i><br><br>
+          My team worked to create a game to present at the ETBD Expo. We created a twist on 80's Arcade Games designed for Atari Joysticks.
 
-          <br><br><b>Software:</b>
+          <br><br><b>Roles:</b>
       <div class = "roles">
               <ul>
-                <li>Maya</li>
-                <li>Unreal Engine 5</li>
-                <li>Substance Painter</li>
+                <li>Lead Game Designer</li>
+                  <li>Project Manager</li>
               </ul>
           </div>
-
+        <b>Responsibilities:</b><ul>
+                <li>Managed group and identified deadline risks to reevaluate scope. Mentored a designer and provided feedback.</li>
+                <li>Sketched level layout in Adobe Illustrator.</li> 
+                <li>Created design document with feature specifications and implementation guidelines.</li>
+                <li>Programmed an external display scoreboard and shipped to the Google Play Store.</li>
+              </ul>
+            Links:
+            <a style="color:rgb(137, 175, 187);" href="https://thesmashers.itch.io/alfredogame" target="_blank">Itch.io</a>
+            <a style="color:rgb(137, 175, 187);" href="https://play.google.com/store/apps/details?id=com.MiamiUniversity.AlFredoOpeningDay" target="_blank">Google Play</a>
+            <a style="color:rgb(137, 175, 187);" href="https://github.com/JKClaytonDev/AlFredo" target="_blank">GitHub</a>
     </div>
-    
     <br>
     <br>
-    <div class="enviroscrollmenu">
-      <img class="hideme" src="img/sliders/alfredoold.png">
-      <img class="enviroscrollmenu" src="img/sliders/alfredoold.png">
-      <img class="enviroscrollmenu" src="img/sliders/alfredonew.png">
-      <img class="enviroscrollmenu" src="img/sliders/alfredonew2.png">
-     </div>
 </body>
 </html>
