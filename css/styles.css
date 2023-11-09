@@ -15,12 +15,24 @@ table {
     table-layout: fixed;
   }
   .iterationtitle{
-    margin: 0px;
+    margin-top: 23px;
     font-family: "futura-pt", sans-serif;
     color: black;
     background-color: #777;
   }
   .iterationtitle h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  .allgameiterations{
+    margin-top: 23px;
+    font-family: "futura-pt", sans-serif;
+    color: black;
+    background-color: #777;
+  }
+  .allgameiterations h1{
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 10px;
@@ -61,6 +73,12 @@ table {
     width: 650;
     height: 370;
     margin-top: 390;
+}
+
+.gamebreakdown .gifs img{
+    width: 650;
+    height: 370;
+    margin-top: 0;
 }
 
 .envirogifs {
@@ -111,6 +129,7 @@ font-style: normal;
     margin-top: 10px;
     margin-bottom: 3px;
     margin-left: 10px;
+    font-size: 26px;
 }
 .gamebreakdown b{
     font-size: 20px;
@@ -163,11 +182,14 @@ font-style: normal;
 font-weight: 300;
 font-style: normal;
 }
+.gamebreakdown h2{
+    font-size: 50px;
+}
 .gamebreakdown{
     padding: 10px;
     background-color:rgba(38, 36, 36, 0.8);
     width: 1400px;
-    font-size: 21px;
+    font-size: 26px;
     margin-top: 20px;
     margin-left: 0px;
     font-family: proxima-nova, sans-serif;
@@ -434,6 +456,10 @@ div.scrollmenu {
     height: 410px;
 }
 
+div.toppart{
+    background-image: url("../img/bannerback.png");
+    height: 300px;
+}
 div.enviroscrollmenu {
     overflow: auto;
     white-space: nowrap;
@@ -441,10 +467,34 @@ div.enviroscrollmenu {
     justify-content: center;
     height: 510px;
 }
-
+div.scrollitem h2 {
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+div.scrollitem ul {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
 div.scrollmenu img {
-    width: 270;
+    width: 340;
+    height: 205px;
+}
+
+div.scrollitem {
+    
+    text-align: center;
+    width: 340;
     height: 405px;
+
+}
+div.scrollitemback{
+    background-color: #777;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+div.scrollitem li{
+    padding-right: 10px;
+    
 }
 
 div.enviroscrollmenu img {
@@ -481,6 +531,18 @@ li a:hover {
 }
 
 @media only screen and (max-width: 1228px) {
+
+    .gamebreakdown .gifs img{
+        width: 0;
+        height: 0;
+        margin-top: 0;
+        margin-bottom: -100;
+    }
+
+    .gamebreakdown .allgameiterations{
+        margin-top: -300;
+    }
+
     .desc {
         font-size: 100px;
     }
