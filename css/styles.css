@@ -453,7 +453,7 @@ div.scrollmenu {
     white-space: nowrap;
     display: flex;
     justify-content: center;
-    height: 410px;
+    height: 360px;
 }
 
 div.toppart{
@@ -484,7 +484,7 @@ div.scrollitem {
     
     text-align: center;
     width: 340;
-    height: 405px;
+    height: 355px;
 
 }
 div.scrollitemback{
@@ -686,7 +686,10 @@ li a:hover {
         width: 170;
         height: 260
     }
-
+    div.scrollitem{
+        height: 100;
+        margin-top: 100px;
+    }
     .gifs {
         width: 600px;
         height: 100px;
@@ -711,17 +714,51 @@ li a:hover {
     .roles ul{
         list-style-type: none;
     }
-
+    
     .topbar {
         background-color: black;
         width: 1088;
         height: 240;
     }
 
-    div.scrollmenu img {
-        width: 620;
-        height: 900
+    div.scrollitem{
+        margin-top: 100px;
     }
+    div.scrollitem a{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 280px;
+        
+    }
+    div.scrollitem img{
+        margin-top: 10px;
+    }
+    div.scrollitemback{
+        height: 300px;
+    }
+    div.scrollmenu img {
+        width: 100%;
+    }
+
+    div.scrollmenu ul{
+        font-size: 10px;
+    }
+
+    div.scrollmenu li{
+        font-size: 20px;
+        margin-top: -20px;
+        margin-bottom: 0px;
+    }
+
+    div.scrollitemback i{
+        font-size: 20px;
+    }
+    
+    div.scrollitemback h2{
+        font-size: 30px;
+        margin-bottom: -25px;
+    }
+
     .banner{
         width: 0;
         height: 0;
@@ -738,8 +775,9 @@ li a:hover {
         display: flex;
         justify-content: left;
         width: 1088;
-        height: 900;
+        height: 750;
         overflow-y: hidden;
+        font-size: 10px;
     }
     .projects .hidemobile{
         display: none;
