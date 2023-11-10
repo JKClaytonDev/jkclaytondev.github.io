@@ -19,6 +19,14 @@ table {
     font-family: "futura-pt", sans-serif;
     color: black;
     background-color: #777;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .toptitle a{
+    border-radius: 5px 5px 5px 5px;
+  }
+  .allgameiterations h2{
+    border-radius: 15px 15px 15px 15px;
+    
   }
   .iterationtitle h1{
     margin-top: 0px;
@@ -27,10 +35,43 @@ table {
   }
 
   .allgameiterations{
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
     margin-top: 23px;
     font-family: "futura-pt", sans-serif;
     color: black;
     background-color: #777;
+    border-radius: 15px 15px 0px 0px;
+
+  }
+  .gamebreakdownback{
+    border-radius: 15px 15px 15px 15px;
+   }
+   .gamebreakdownmargins{
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   }
+   
+  .gamebreakdownback p{
+    margin: 20px;
+  }
+
+
+  iframe{
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  img{
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .banner img{
+    box-shadow: 0px 0px rgba(0, 0, 0, 0);
+    float: left;
+  }
+  .halfbreakdownback .allgameiterations{
+    border-radius: 15px 15px 0px 0px;
+    width: 740px;
   }
   .allgameiterations h1{
     margin-top: 0px;
@@ -74,13 +115,21 @@ table {
     height: 370;
     margin-top: 390;
 }
-
+.scrollitemback li{
+    font-size: 18px;
+    text-align: left;
+}
 .gamebreakdown .gifs img{
     width: 650;
     height: 370;
     margin-top: 0;
 }
-
+.scrollitemback i{
+    font-size: 20px;
+}
+div.scrollitemback h2{
+    font-size: 30px;
+}
 .envirogifs {
     width: 650;
     float: right;
@@ -131,6 +180,11 @@ font-style: normal;
     margin-left: 10px;
     font-size: 26px;
 }
+
+.gamebreakdownmargins h2{
+    margin-left: -2px;
+   }
+
 .gamebreakdown b{
     font-size: 20px;
     font-family: "futura-pt", sans-serif;
@@ -160,9 +214,12 @@ p{
 font-weight: 300;
 font-style: normal;
 }
+
 .desc {
     padding: 10px;
     background-color:rgba(38, 36, 36, 0.8);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px 15px 15px;
     width: 680px;
     font-size: 21px;
     margin-top: 20px;
@@ -186,9 +243,8 @@ font-style: normal;
     font-size: 50px;
 }
 .gamebreakdown{
-    padding: 10px;
-    background-color:rgba(38, 36, 36, 0.8);
-    width: 1400px;
+    
+    
     font-size: 26px;
     margin-top: 20px;
     margin-left: 0px;
@@ -196,6 +252,28 @@ font-style: normal;
 font-weight: 300;
 font-style: normal;
 }
+.gamebreakdownback{
+    background-color:rgba(38, 36, 36, 0.8);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    width: 1400px;
+}
+
+.halfbreakdownback{
+    
+    width: 1400px;
+}
+
+.halfbreakdowntext{
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 0 0 15px 15px;
+    background-color:rgba(38, 36, 36, 0.8);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    width: 740px;
+    height: 280px;
+    margin-bottom: -15px;
+}
+
 .desc ul {
     color: white;
 }
@@ -218,7 +296,8 @@ font-style: normal;
 
 .topbar {
     background-color: black;
-
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px 0px 0px;
 }
 
 .blockquote {
@@ -315,7 +394,6 @@ font-style: normal;
     text-align: center;
     margin-top: -20;
     float: center;
-    background-color: grey;
     color: grey;
 }
 
@@ -387,9 +465,9 @@ body {
 }
 
 .infopage {
-    width: 1000px;
+    width: 1300px;
     text-align: left;
-    font-size: 20px;
+    font-size: 23px;
     font-style: normal;
 
     float: center;
@@ -429,8 +507,21 @@ font-style: normal;
     padding: 0;
     overflow: hidden;
     background-color: grey;
+    border-radius: 0px 0px 15px 15px ;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    
+}
+div.scrollitemback{
+    border-radius: 0px 0px 15px 15px;
 }
 
+div.scrollitem img{
+    border-radius:  15px 15px 0px 0px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    position:relative;
+    z-index:-999;
+
+}
 .projects li {
     float: left;
 }
@@ -453,11 +544,13 @@ div.scrollmenu {
     white-space: nowrap;
     display: flex;
     justify-content: center;
-    height: 360px;
+    height: 390px;
 }
 
 div.toppart{
     background-image: url("../img/bannerback.png");
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
     height: 300px;
 }
 div.enviroscrollmenu {
@@ -476,7 +569,7 @@ div.scrollitem ul {
     margin-bottom: 15px;
 }
 div.scrollmenu img {
-    width: 340;
+    width: 330;
     height: 205px;
 }
 
@@ -486,11 +579,13 @@ div.scrollitem {
     width: 340;
     height: 355px;
 
+    
 }
 div.scrollitemback{
     background-color: #777;
     margin-left: 5px;
     margin-right: 5px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
 }
 div.scrollitem li{
     padding-right: 10px;
@@ -510,9 +605,6 @@ div.scrollmenu a {
     text-decoration: none;
 }
 
-div.scrollmenu a:hover {
-    background-color: #777;
-}
 
 li a:hover {
     background-color: #111111;
@@ -522,18 +614,16 @@ li a:hover {
     width: 500px;
 }
 .banner img {
-    width: 400px;
-    margin-left: 150px;
-    margin-top: 20px;
+    max-height: 210px;
+    margin-left: 20px;
+    margin-top: 25px;
     float: left;
-    height: 202px;
-    padding-right: 45px;
 }
 
 @media only screen and (max-width: 1228px) {
 
     .gamebreakdown .gifs img{
-        width: 0;
+        width: 0;</div>
         height: 0;
         margin-top: 0;
         margin-bottom: -100;
@@ -546,7 +636,7 @@ li a:hover {
     .desc {
         font-size: 100px;
     }
-    .projects .hidemobile{
+    .hidemobile{
         display: none;
         width: 0px;
     }
@@ -654,6 +744,7 @@ li a:hover {
         margin-top: -40;
         float: top;
         background-color: black;
+        
     }
 
     .projects a {
@@ -732,6 +823,7 @@ li a:hover {
     }
     div.scrollitem img{
         margin-top: 10px;
+        
     }
     div.scrollitemback{
         height: 300px;
@@ -762,7 +854,6 @@ li a:hover {
     .banner{
         width: 0;
         height: 0;
-        float: center;
 
     }
     .banner img{
@@ -843,6 +934,7 @@ li a:hover {
     }
     .gamebreakdown h2{
         font-size: 50px;
+        width: 100px;
     }
     .gamebreakdown .gifs {
         width: 980px;
@@ -931,7 +1023,7 @@ li a:hover {
     }
 
     .toptitle a {
-        font-size: 25px;
+        font-size: 30px;
         width: 500px;
         height: 40px;
         padding: 5px;
@@ -943,8 +1035,9 @@ li a:hover {
     .Resume a {
         font-size: 30px;
         width: 500px;
-        height: 30px;
+        height: 40px;
         padding: 5px;
+        padding-top: 1px;
         inline-size: 150px;
         margin-top: 60px;
         width: 250px;
