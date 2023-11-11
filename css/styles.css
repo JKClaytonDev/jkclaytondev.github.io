@@ -319,17 +319,18 @@ div.scrollitemback h2{
 
 
 @keyframes scrollitemhover {
-    from {font-size: 20px;}
+    from {font-size: 15px;}
     to {font-size: 18px;}
   }
 
   div.scrollitem i{
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 @keyframes scrollitem {
     from {font-size: 18px;}
-    to {font-size: 20px;}
+    to {font-size: 15px;}
   }
 
 .envirogifs {
@@ -420,7 +421,10 @@ font-style: normal;
 .gamebreakdownmargins h2{
     margin-left: -2px;
    }
-
+.topbar h2{
+margin-top: 13.920;
+padding-bottom: 6.920;
+}
 .gamebreakdown b{
     font-size: 20px;
     font-family: "futura-pt", sans-serif;
@@ -540,7 +544,8 @@ font-style: normal;
 }
 
 .topbar {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px 15px 0px 0px;
 }
@@ -578,11 +583,12 @@ blockquote {
 .topbar a {
     position: absolute;
     right: 10;
-    top: 10;
+    top: 30;
     text-decoration: none;
     color: white;
     font-size: 20px;
-    background-color: grey;
+    background-color: rgba(91, 91, 91, 0.8);
+    background-blend-mode: multiply;
     text-align: center;
     width: 160px;
     margin-top: 5px;
@@ -591,11 +597,12 @@ blockquote {
 .Contact a {
     position: absolute;
     right: 10;
-    top: 10;
+    top: 30;
     text-decoration: none;
     color: white;
     font-size: 20px;
-    background-color: grey;
+    background-color: rgba(91, 91, 91, 0.8);
+    background-blend-mode: multiply;
     text-align: center;
     width: 160px;
     margin-top: 35px;
@@ -748,7 +755,8 @@ font-style: normal;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: grey;
+    background-color: rgba(91, 91, 91, 0.8);
+    background-blend-mode: multiply;
     border-radius: 0px 0px 15px 15px ;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
     
@@ -816,7 +824,7 @@ div.scrollitem h2 {
 }
 div.scrollitem ul {
     margin-top: 5px;
-    margin-bottom: 15px;
+    line-height: 30px;
 }
 div.scrollmenu img {
     width: 330;
@@ -1263,6 +1271,7 @@ li a:hover {
     .topbar h2{
         font-size: 40;
         width: 900;
+        
         background-color: black;
         height: 0;
     }
