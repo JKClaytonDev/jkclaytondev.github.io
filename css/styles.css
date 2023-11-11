@@ -233,8 +233,30 @@ div.scrollitemback h2{
         div.scrollitem div.scrollitemback{
             height: 165px; background-color: #777;
         }
+        div.scrollitem:hover h2{
+            animation: fadehoverh2 0.6s 1;
+            font-size: 40px;
+        }
+        div.scrollitem:hover li{
+            font-size: 0px;
+        }
+        div.scrollitem:hover div.scrollitemback{
+            height: 125px;
+            background-color: rgb(94, 94, 94);
+        }
+        div.scrollitem:hover i{
+            font-size: 18px;
+        }
+        .slide img:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
 }
 
+@keyframes fadehoverh2 {
+    from {font-size: 30px}
+    to {font-size: 40px}
+  }
 
 @keyframes scrollitemimgs {
     from {height: 260px;}
@@ -254,10 +276,7 @@ div.scrollitemback h2{
     from {height: 0px;}
     to {height: 390px;}
   }
-div.scrollitem:hover div.scrollitemback{
-    height: 125px;
-    background-color: rgb(94, 94, 94);
-}
+
 
 @keyframes scrollitemhoverback {
     from {height: 165px; background-color: #777}
@@ -271,12 +290,11 @@ div.scrollitem:hover div.scrollitemback{
     to {height: 165px; background-color: #777}
   }
 
-div.scrollitem:hover h2{
-    font-size: 40px;
+  .scrollmenu img:hover {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
 }
-div.scrollitem:hover li{
-    font-size: 0px;
-}
+
 
 @keyframes scrollitemlihover {
     from {color: rgb(255, 255, 255, 1);}
@@ -286,9 +304,7 @@ div.scrollitem:hover li{
     from {font-size: 20;}
     to {font-size: 0;}
   }
-div.scrollitem:hover i{
-    font-size: 18px;
-}
+
 
 @keyframes scrollitemhover {
     from {font-size: 20px;}
@@ -659,10 +675,7 @@ body {
     margin-left: 100px;
 }
 
-.slide img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
+
 
 .rightbox {
     margin-right: 150px;
@@ -750,10 +763,6 @@ div.scrollitem img{
     text-decoration: none;
 }
 
-.scrollmenu img:hover {
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01);
-}
 
 div.scrollmenu {
     overflow: auto;
@@ -765,9 +774,17 @@ div.scrollmenu {
 div.toppart{
     background-image: url("../img/bannerback.png");
     border-radius: 15px 15px 15px 15px;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  animation: scrolldown 1s 1;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
     height: 300px;
 }
+@keyframes scrolldown {
+    from {  background-position: bottom; }
+    to {  background-position: center; }
+  }
 div.enviroscrollmenu {
     overflow: auto;
     white-space: nowrap;
