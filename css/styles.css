@@ -20,6 +20,7 @@
     box-shadow: 0 0 rgba(0, 0, 0, 0);
 }
 .showgamebreakdown{
+    text-decoration: none;
     height: 70px;
     background-image: url("../img/bg.png");
             background-color: rgba(87, 86, 86, 0.35);
@@ -32,10 +33,13 @@
   color: white;
     border-radius: 25px 25px 25px 25px;
     width: 680px;;
-    font-size: 56px;
+    font-size: 45px;
     margin-top: 170px;
     float: center;
-    margin-left: 0px;
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
 
 }
 html {
