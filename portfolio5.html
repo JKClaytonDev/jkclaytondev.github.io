@@ -43,7 +43,7 @@ body  {
           <li><a href="portfolio2.html">Flying Frags</a></li>
 </ul>
 </div>
-<div class = "banner">
+<div class = "banner" id = "banner">
 <img src="img/castillo2/banner.png"></a>
 </div>
 <div class = "gifs">
@@ -82,7 +82,7 @@ body  {
     width: 0px;
     height: 0px;
   }
-  .img-comp-img {
+  .img-comp-img {f
     margin: 0px;
     width: 0px;
     height: 0px;
@@ -164,15 +164,16 @@ body  {
     initComparisons();
     </script>
 <div class = "contactinfo">
-  Jackson Kenneth Clayton
+  <div id = "contactinfo">Jackson Kenneth Clayton
   <a href="mailto:claytoj4@miamioh.edu">claytoj4@miamioh.edu<a>
+  </div>
   </div>
 
 </div>
 <div class="desc">
   <br><br><br><br><br>
   <i>TLDR: Solo project shipped on Steam, sandbox collectathon</i><br><br>
-  I designed levels with distinctive themes and engaging gameplay sequences, complemented by outsourced music and voice acting.
+  I designed levels with distinctive themes and engaging gameplay sequences.
   <br><br>
     <b>Accomplishments:</b>
     <ul>
@@ -180,7 +181,6 @@ body  {
         <li>Employed colored lights for navigation through color theory. </li>
         <li>Automated baking, compression, and multiplatform building scripts were developed, along with a cubemap portal shader.
         </li>
-        <li>Launched on Steam post-Steam Next Fest. Spoke with industry experts and notable indies for valuable feedback.</li>
 
     </ul>
     Links:
@@ -190,7 +190,12 @@ body  {
     <br>
 </div>
 <br>
-<div class = "hidemobile">
+<div class = "hidemobile" >
+  <br>
+<a class = "showgamebreakdown" id = "showgamebreakdown" href="#" onclick="toggleDiv()">
+  SHOW LEVEL BREAKDOWN
+</a>
+<div id = "gamebreakdown"><br><br>
 <div class="gamebreakdown"><div class="gamebreakdownback">
 <div class = "allgameiterations">
 <h2>Level Iterations - Circle 4: Greed</h2></div><p>  <div class = "gamebreakdownmargins">
@@ -304,5 +309,28 @@ This method worked well for refining how the player interacted with the level, s
 </div>
 </div>
 <br><br>
+</div>
+<script>
+  
+  function toggleDiv() {
+    var div = document.getElementById('gamebreakdown');
+    if (div.style.display === 'none') {
+      document.getElementById('gamebreakdown').scrollIntoView();
+      div.style.display = 'none';
+      document.getElementById("showgamebreakdown").innerHTML = "New text!";
+    } else {
+      document.getElementById("showgamebreakdown").innerHTML = "HIDE LEVEL BREAKDOWN";
+      div.style.display = 'block';
+      div = document.getElementById('showgamebreakdown');
+      div.style.display = 'none';
+      div = document.getElementById('contactinfo');
+      div.style.display = 'none';
+      document.getElementById('gamebreakdown').scrollIntoView();
+
+    }
+    
+  }
+</script>
+
 </body>
 </html>

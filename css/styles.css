@@ -19,6 +19,35 @@
     float: left;
     box-shadow: 0 0 rgba(0, 0, 0, 0);
 }
+.showgamebreakdown{
+    height: 70px;
+    background-image: url("../img/bg.png");
+            background-color: rgba(87, 86, 86, 0.35);
+            background-blend-mode: multiply;
+            background-size: 300%;
+    border-radius: 0 0 15px 15px;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+    border-radius: 25px 25px 25px 25px;
+    width: 680px;;
+    font-size: 56px;
+    margin-top: 170px;
+    float: center;
+    margin-left: 0px;
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+#showgamebreakdown{
+    scroll-behavior: smooth;
+}
+#gamebreakdown{
+    scroll-behavior: smooth;
+    display: none;
+}
 .floatright{
     width: 300;
     float: right;
