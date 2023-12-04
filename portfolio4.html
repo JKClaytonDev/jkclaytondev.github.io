@@ -192,5 +192,92 @@
     </div>
     <br>
     <br>
-</body>
-</html>
+    <div class = "hidemobile" >
+      <br><br><br>
+    <a class = "showgamebreakdown" id = "showgamebreakdown" href="#" onclick="toggleDiv()">
+      SHOW LEVEL BREAKDOWN
+    </a><br>
+    <div id = "gamebreakdown"><br><br>
+    <div class="gamebreakdown"><div class="gamebreakdownback">
+    <div class = "allgameiterations">
+    <h2>Persistence of Memory</h2></div><p>  <div class = "gamebreakdownmargins">
+    <h2>Game Introduction:</h2>
+    The level is built to be played from many different perspectives, players stats are very dynamic and I want those stats to take them to different areas of the map.
+    <h2>Design Philosophy:</h2>
+    I designed the level to have strong verticality, along with lots of spots where you can either camp or train enemies, but with more valuable spots having riskier exits.
+    <h2>Level Introduction:</h2>
+    This level is themed after "The Persistence of Memory" by Salvador Dali, with melting clocks and a color scheme meant to be remeniscent of it. This game is still in progress so this website will be updated over time.
+  </div>
+    <div class = "gifs">
+      <br><br>
+      <img src="img/sliders/cciteration1.png" width="300" height="200"> 
+    </div><br></div></div>
+    <div class="gamebreakdown"><div class="halfbreakdownback">
+    <div class = "allgameiterations">
+    <h2>Whitebox</h2>
+    <i>Good: Fun gameplay</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i>Bad: Claustrophobic</i></div><div class = halfbreakdowntext>
+    <h3>Layout/Traversal:</h3>
+    
+    Level laid out to allow for adjustable stats.<br><br>
+    <h3>Combat Sequences/Objectives:</h3>
+    Places for kiting and camping depending on stats.<br><br>
+    <h3>Theme/Environment:</h3>
+    
+    Themed around tall cliffs and strong colors.
+    </div>
+    
+    
+    <div class = "gifs">
+      <br>
+      <img src="img/sliders/cciteration2.png" width="300" height="200"> </div>
+    <div class = "allgameiterations">
+    <h2>Removing Borders</h2>
+    <i>Good: Opened up</i>&emsp;&emsp;&emsp;<i>Bad: Missing detail</i></div><div class = halfbreakdowntext>
+    
+    
+    <h3>Layout/Traversal:</h3>
+    
+    I opened the edges for breathing room.<br><br>
+    
+    <h3>Combat Sequences/Objectives:</h3>
+    
+    Moved around spawns to be more forgiving.<br><br>
+    
+    <h3>Theme/Environment:</h3>
+    
+    Themed around Salvador Dali’s Persistence of Memory.<br><br></div></div>
+    </div><div class = "gamebreakdown"><div class="gamebreakdownback">
+      <div class = "allgameiterations">
+    <h2>Conclusion</h2></div><div class = "gamebreakdownmargins">
+    The iterative process I went through showcases my dedication to making cohesive levels. I had to make sure that the level fulfilled its role in the game, but also exceeded players’ expectations with impressive design and aesthetics.
+    <br><br>
+    This method worked well for refining how the player interacted with the level, specifically in rewarding creative use of the glide ability. The downside was the constantly changing visual theme.<br><br>
+    </div></div></div></div>
+    </div>
+    </div>
+    <br><br>
+    </div>
+    <script>
+      
+      function toggleDiv() {
+        var div = document.getElementById('gamebreakdown');
+        if (div.style.display === 'none') {
+          document.getElementById('gamebreakdown').scrollIntoView();
+          div.style.display = 'none';
+          document.getElementById("showgamebreakdown").innerHTML = "New text!";
+        } else {
+          document.getElementById("showgamebreakdown").innerHTML = "HIDE LEVEL BREAKDOWN";
+          div.style.display = 'block';
+          div = document.getElementById('showgamebreakdown');
+          div.style.display = 'none';
+          div = document.getElementById('contactinfo');
+          div.style.display = 'none';
+          document.getElementById('gamebreakdown').scrollIntoView();
+    
+        }
+        
+      }
+    </script>
+    
+    </body>
+    </html>
