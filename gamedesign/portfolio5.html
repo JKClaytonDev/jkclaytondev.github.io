@@ -1,0 +1,336 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Castillo: The Castillo | Jackson Clayton - Game Portfolio</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/cgh0mgb.css">
+</head>
+<body>
+
+<style>
+body  {
+    font-family: sans-serif;
+  background-image: url("img/castillo2/bg.png");
+   background-repeat: no-repeat;
+   color: white;
+   background-size: cover;
+}
+</style>
+
+<br>
+<div class = "topbar">
+  <div class = "toptitle">
+    <div class = "Contact"><a href = "about.html">Contact</a></div>
+    <div class = "Resume"><a href = "Resume.pdf">Resume</a></div>  
+
+<h1>Jackson Clayton</h1>
+<h2>Game Portfolio</h2>
+      
+
+      
+  </div>
+  </div>
+<div class = "projects">
+<div class = "projinterrupt">
+</div>
+<ul>
+  <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio5.html">Castillo</a></li>
+          <li><a href="portfolio4.html">Canvas Carnage</a></li>
+          <li><a href="portfolio1.html">HyperJustice</a></li>
+          <li><a href="portfolio2.html">Flying Frags</a></li>
+</ul>
+</div>
+<div class = "banner" id = "banner">
+<img src="img/castillo2/banner.png"></a>
+</div>
+<div class = "gifs">
+  <iframe src="https://www.youtube.com/embed/videoseries?si=SLaAmZuxRFz5fcdL&amp;list=PLo1PT3AVEADFDyh0gfn5jPUSPMEfpEkw6&loop=1&mute=1&autoplay=1&start=51" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <style>
+    * {box-sizing: border-box;}
+    .img-comp-container {
+      position: relative;
+      height: 200px; 
+    }
+    .img-comp-img {
+      position: absolute;
+      width: auto;
+      height: auto;
+      overflow:hidden;
+    }
+    .img-comp-img img {
+      display:block;
+      vertical-align:middle;
+    }
+    .img-comp-slider {
+      position: absolute;
+      z-index:9;
+      cursor: ew-resize;
+      width: 40px;
+      height: 40px;
+      background-color: #2196F3;
+      opacity: 0.7;
+      border-radius: 50%;
+      margin-top: 185px;
+    }
+    @media only screen and (max-width: 1225px) {
+  * {box-sizing: border-box;}
+  .img-comp-container {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-img {f
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-img img {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-slider {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  }
+    </style>
+    <script>
+    function initComparisons() {
+      var x, i;
+      x = document.getElementsByClassName("img-comp-overlay");
+      for (i = 0; i < x.length; i++) {
+        compareImages(x[i]);
+      }
+      function compareImages(img) {
+        var slider, img, clicked = 0, w, h;
+        w = img.offsetWidth;
+        h = img.offsetHeight;
+        img.style.width = (w / 2) + "px";
+        slider = document.createElement("DIV");
+        slider.setAttribute("class", "img-comp-slider");
+        img.parentElement.insertBefore(slider, img);
+        slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+        slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+        slider.addEventListener("mousedown", slideReady);
+        window.addEventListener("mouseup", slideFinish);
+        slider.addEventListener("touchstart", slideReady);
+        window.addEventListener("touchend", slideFinish);
+        function slideReady(e) {
+          e.preventDefault();
+          clicked = 1;
+          window.addEventListener("mousemove", slideMove);
+          window.addEventListener("touchmove", slideMove);
+        }
+        function slideFinish() {
+          clicked = 0;
+        }
+        function slideMove(e) {
+          var pos;
+          if (clicked == 0) return false;
+          pos = getCursorPos(e)
+          if (pos < 0) pos = 0;
+          if (pos > w) pos = w;
+          slide(pos);
+        }
+        function getCursorPos(e) {
+          var a, x = 0;
+          e = (e.changedTouches) ? e.changedTouches[0] : e;
+          a = img.getBoundingClientRect();
+          x = e.pageX - a.left;
+          x = x - window.pageXOffset;
+          return x;
+        }
+        function slide(x) {
+          img.style.width = x + "px";
+          slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+        }
+      }
+    }
+    </script>
+    <div class="img-comp-container">
+      <div class="img-comp-img">
+        <img src="img/sliders/ninecirclesnew.png" width="300" height="200">
+      </div>
+      <div class="img-comp-img img-comp-overlay">
+        <img src="img/sliders/ninecirclesold.png" width="300" height="200">
+      </div>
+    </div>
+    <script>
+    initComparisons();
+    </script>
+<div class = "contactinfo">
+  <div id = "contactinfo">Jackson Kenneth Clayton
+  <a href="mailto:claytoj4@miamioh.edu">claytoj4@miamioh.edu<a>
+  </div>
+  </div>
+
+</div>
+<div class="desc">
+  <br><br><br><br><br>
+  <i>TLDR: Solo project shipped on Steam, sandbox collectathon - Unity</i><br><br>
+  I designed levels with distinctive themes and engaging gameplay sequences.
+  <br><br>
+    <b>Accomplishments:</b>
+    <ul>
+        <li>Emphasized Engagement Design; sandboxes demanded distinct principles, such as progress-marking cleanable goop and optimized code for efficient handling of thousands of objects.</li>
+        <li>Employed colored lights for navigation through color theory. </li>
+        <li>Automated baking, compression, and multiplatform building scripts were developed, along with a cubemap portal shader.
+        </li>
+
+    </ul>
+    Links:
+    <a style="color:rgb(137, 175, 187);" href="https://store.steampowered.com/app/2293880/CASTILLO_The_Nine_Circles/" target="_blank">Steam/Demo</a>
+    <a style="color:rgb(137, 175, 187);" href="https://github.com/JKClaytonDev/CastilloInfernoURP" target="_blank">GitHub</a>
+
+    <br>
+</div>
+<br>
+<div class = "hidemobile" >
+  <br>
+<a class = "showgamebreakdown" id = "showgamebreakdown" href="#" onclick="toggleDiv()">
+  SHOW LEVEL BREAKDOWN
+</a>
+<div id = "gamebreakdown"><br><br>
+<div class="gamebreakdown"><div class="gamebreakdownback">
+<div class = "allgameiterations">
+<h2>Level Iterations - Circle 4: Greed</h2></div><p>  <div class = "gamebreakdownmargins">
+<h2>Game Introduction:</h2>
+Each level is an open area with 150 moneybags and 10 Power Shards to collect, along with 1 new ability to buy. You must explore each world to collect enough shards to open the next world.
+<h2>Design Philosophy:</h2>
+I designed levels with the goal to make each as memorable as possible. Each has slight Metroidvania elements, unlocking a new ability changes the way you traverse them and opens up previously inaccessible areas.
+<h2>Level Introduction:</h2>
+This level is a pivotal point where players get the glide ability. I built this level with narrow paths, unlocking the ability allows you to glide between them. Here's a breakdown of the evolution throughout development.
+</div>
+<div class = "gifs">
+  <br><br>
+  <img src="img/sliders/WhiteboxFinal1.png" width="300" height="200"> 
+</div><br></div></div>
+<div class="gamebreakdown"><div class="halfbreakdownback">
+<div class = "allgameiterations">
+<h2>Level Blockout</h2>
+<i>Good: Looping layout</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i>Bad: Lacks variation</i></div><div class = halfbreakdowntext>
+<h3>Layout/Traversal:</h3>
+
+Based on the Adobe Illustrator sketch. Routes loop to center.<br><br>
+<h3>Combat Sequences/Objectives:</h3>
+Narrow paths make on-foot combat difficult, promote flying.<br><br>
+<h3>Theme/Environment:</h3>
+
+Ravine, grassy right area, boardwalk in back.
+</div></div>
+<div class = "gifs">
+  <br>
+  <img src="img/sliders/WhiteboxFinal2.png" width="300" height="200"> </div>
+
+  <div class="gamebreakdown"><div class="halfbreakdownback">
+    <div class = "allgameiterations">
+<h2>Vantage Point</h2>
+<i>Good: Right area setpieces</i>&emsp;&emsp;&emsp;&emsp;<i>Bad: Back area setpieces</i></div><div class = halfbreakdowntext>
+
+<h3>Layout/Traversal:</h3>
+
+New vantage point lets players familiarize themselves.<br><br>
+
+<h3>Combat Sequences/Objectives:</h3>
+
+New difficult fight to vantage point.<br><br>
+<h3>Theme/Environment:</h3>
+
+Slot machine in right area, pachinko in back.<br>
+</div>
+<div class = "gifs">
+  <br>
+  <img src="img/sliders/WhiteboxFinal3.png" width="300" height="200"> </div>
+<div class = "allgameiterations">
+<h2>Connecting Areas</h2>
+<i>Good: New Objectives</i>&emsp;&emsp;&emsp;<i>Bad: Right area color scheme</i></div><div class = halfbreakdowntext>
+<h3>Layout/Traversal:</h3>
+
+Gap connecting areas. Fly over to skip backtracking.<br><br>
+
+<h3>Combat Sequences/Objectives:</h3>
+
+New objectives, like gliding through rings.<br><br>
+<h3>Theme/Environment:</h3>
+
+Fully themed around arcades and casinos.<br></div>
+
+
+<div class = "gifs"><br>
+  <img src="img/sliders/WhiteboxFinal4.png" width="300" height="200"> </div>
+<div class = "allgameiterations">
+<h2>Center Area</h2>
+<i>Good: Lighting overhaul</i>&emsp;&emsp;&emsp;&emsp;&emsp;<i>Bad: Back area boring</i></div><div class = halfbreakdowntext>
+
+
+<h3>Layout/Traversal:</h3>
+
+Wall-run takes you from the boss to spawn.<br><br>
+
+<h3>Combat Sequences/Objectives:</h3>
+
+New area to the left of spawn has its own objective.<br><br>
+
+<h3>Theme/Environment:</h3>
+
+Center area now mineshaft with shiny gold and blue lighting.<br></div>
+
+<div class = "gifs">
+  <br>
+  <img src="img/sliders/WhiteboxFinal5.png" width="300" height="200"> </div>
+<div class = "allgameiterations">
+<h2>Finishing Touches</h2>
+<i>Good: New side/back</i>&emsp;&emsp;&emsp;<i>Bad: Didn’t match concept art</i></div><div class = halfbreakdowntext>
+
+
+<h3>Layout/Traversal:</h3>
+
+Areas modified to test and challenge gliding.<br><br>
+
+<h3>Combat Sequences/Objectives:</h3>
+
+Buildable zipline shortcuts reward thorough players.<br><br>
+
+<h3>Theme/Environment:</h3>
+
+Right area has city theme and back has mushroom theme.<br><br></div></div>
+</div><div class = "gamebreakdown"><div class="gamebreakdownback">
+  <div class = "allgameiterations">
+<h2>Conclusion</h2></div><div class = "gamebreakdownmargins">
+The iterative process I went through showcases my dedication to making cohesive levels. I had to make sure that the level fulfilled its role in the game, but also exceeded players’ expectations with impressive design and aesthetics.
+<br><br>
+This method worked well for refining how the player interacted with the level, specifically in rewarding creative use of the glide ability. The downside was the constantly changing visual theme.<br><br>
+</div></div></div></div>
+</div>
+</div>
+<br><br>
+</div>
+<script>
+  
+  function toggleDiv() {
+    var div = document.getElementById('gamebreakdown');
+    if (div.style.display === 'none') {
+      document.getElementById('gamebreakdown').scrollIntoView();
+      div.style.display = 'none';
+      document.getElementById("showgamebreakdown").innerHTML = "New text!";
+    } else {
+      document.getElementById("showgamebreakdown").innerHTML = "HIDE LEVEL BREAKDOWN";
+      div.style.display = 'block';
+      div = document.getElementById('showgamebreakdown');
+      div.style.display = 'none';
+      div = document.getElementById('contactinfo');
+      div.style.display = 'none';
+      document.getElementById('gamebreakdown').scrollIntoView();
+
+    }
+    
+  }
+</script>
+
+</body>
+</html>

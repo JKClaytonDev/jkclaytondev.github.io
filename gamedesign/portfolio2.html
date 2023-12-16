@@ -1,0 +1,345 @@
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Flying Frags | Jackson Clayton - Game Portfolio</title>
+
+    
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/cgh0mgb.css">
+</head>
+<body>
+
+<style>
+body  {
+    font-family: sans-serif;
+  background-image: url("img/ffwt/bg.png");
+   background-repeat: no-repeat;
+   color: white;
+   background-size: cover;
+}
+</style>
+<br>
+<div class = "topbar">
+    
+  <div class = "toptitle">
+    <div class = "Contact"><a href = "about.html">Contact</a></div>
+    <div class = "Resume"><a href = "Resume.pdf">Resume</a></div>
+  
+<h1>Jackson Clayton</h1>
+<h2>Game Portfolio</h2>
+      
+  
+      
+  </div>
+  </div>
+<div class = "projects">
+<div class = "projinterrupt">
+</div>
+<ul>
+  <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio5.html">Castillo</a></li>
+          <li><a href="portfolio4.html">Canvas Carnage</a></li>
+          <li><a href="portfolio1.html">HyperJustice</a></li>
+          <li><a href="portfolio2.html">Flying Frags</a></li>
+</ul>
+</div>
+<div class = "banner">
+<img src="img/ffwt/banner.png"></a>
+</div>
+<div class = "gifs">
+    
+  <iframe src="https://www.youtube.com/embed/videoseries?si=F6AlkMGBmm1keiE1&amp;list=PLo1PT3AVEADGM3w2V4D-4FcSsF_K5gyHU&loop=1&mute=1&autoplay=1&start=140" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <style>
+    * {box-sizing: border-box;}
+    .img-comp-container {
+      position: relative;
+      height: 200px; 
+    }
+    .img-comp-img {
+      position: absolute;
+      width: auto;
+      height: auto;
+      overflow:hidden;
+    }
+    .img-comp-img img {
+      display:block;
+      vertical-align:middle;
+    }
+    .img-comp-slider {
+      position: absolute;
+      z-index:9;
+      cursor: ew-resize;
+      width: 40px;
+      height: 40px;
+      background-color: #2196F3;
+      opacity: 0.7;
+      border-radius: 50%;
+      margin-top: 185px;
+    }
+    @media only screen and (max-width: 1225px) {
+  * {box-sizing: border-box;}
+  .img-comp-container {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-img {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-img img {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-slider {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  }
+    </style>
+    <script>
+    function initComparisons() {
+      var x, i;
+      x = document.getElementsByClassName("img-comp-overlay");
+      for (i = 0; i < x.length; i++) {
+        compareImages(x[i]);
+      }
+      function compareImages(img) {
+        var slider, img, clicked = 0, w, h;
+        w = img.offsetWidth;
+        h = img.offsetHeight;
+        img.style.width = (w / 2) + "px";
+        slider = document.createElement("DIV");
+        slider.setAttribute("class", "img-comp-slider");
+        img.parentElement.insertBefore(slider, img);
+        slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+        slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+        slider.addEventListener("mousedown", slideReady);
+        window.addEventListener("mouseup", slideFinish);
+        slider.addEventListener("touchstart", slideReady);
+        window.addEventListener("touchend", slideFinish);
+        function slideReady(e) {
+          e.preventDefault();
+          clicked = 1;
+          window.addEventListener("mousemove", slideMove);
+          window.addEventListener("touchmove", slideMove);
+        }
+        function slideFinish() {
+          clicked = 0;
+        }
+        function slideMove(e) {
+          var pos;
+          if (clicked == 0) return false;
+          pos = getCursorPos(e)
+          if (pos < 0) pos = 0;
+          if (pos > w) pos = w;
+          slide(pos);
+        }
+        function getCursorPos(e) {
+          var a, x = 0;
+          e = (e.changedTouches) ? e.changedTouches[0] : e;
+          a = img.getBoundingClientRect();
+          x = e.pageX - a.left;
+          x = x - window.pageXOffset;
+          return x;
+        }
+        function slide(x) {
+          img.style.width = x + "px";
+          slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+        }
+      }
+    }
+    </script>
+    <div class="img-comp-container">
+      <div class="img-comp-img">
+        <img src="img/sliders/ffwtnew.png" width="300" height="200">
+      </div>
+      <div class="img-comp-img img-comp-overlay">
+        <img src="img/sliders/ffwtold.png" width="300" height="200">
+      </div>
+    </div>
+    <script>
+    initComparisons();
+    </script>
+<div class = "contactinfo">
+  Jackson Kenneth Clayton
+  <a href="mailto:claytoj4@miamioh.edu">claytoj4@miamioh.edu<a>
+  </div>
+</div>
+<div class = "desc">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <i>TLDR: Solo project shipped on Steam, 3D platformer - Unity</i><br><br>
+A solo project with outsourced music. FPS Platformer where I tested my level design skills by   making a multi-hour game accessible to all players.
+<br><br>
+<b>Accomplishments:</b><ul>
+ <li>Prioritized level flow with vertically aligned routes; lower paths are easier but slower. Implemented a boost system to discourage skipping arenas.</li>
+<li>Developed AI navigation for high entity counts on low-end hardware, and crafted a custom level editor.</li>
+<li>Sketched concept art in Illustrator and modeled in Maya.</li>
+<li>Enhanced atmosphere with Unity's HDRP.</li>
+<li>Released on Steam, iterated through playtests for user feedback.</li>
+</ul>
+
+Links:
+<a style="color:rgb(137, 175, 187);" href = "https://store.steampowered.com/app/1831780/HYPERJUSTICE/" target="_blank">Steam</a>
+<a style="color:rgb(137, 175, 187);" href = "https://drive.google.com/uc?export=download&id=16hG60Deqtzsk6gAFhqeKMryCruKDSp0B" target="_blank">Drive</a>
+<a style="color:rgb(137, 175, 187);" href = "https://github.com/JKClaytonDev/HyperjusticeSteam" target="_blank">GitHub</a>
+<br>
+</div>
+<div class = "hidemobile" >
+  <br>
+<a class = "showgamebreakdown" id = "showgamebreakdown" href="#" onclick="toggleDiv()">
+  SHOW LEVEL BREAKDOWN
+</a>
+<div id = "gamebreakdown"><br><br>
+<div class="gamebreakdown"><div class="gamebreakdownback">
+<div class = "allgameiterations">
+<h2>Level Iterations - Soaring Skyscrapers</h2></div><p>  <div class = "gamebreakdownmargins">
+<h2>Game Introduction:</h2>
+This game is set in a world that is being ripped apart as you destroy robot alien invaders. Height is emphasized in combat and it's important that you get the high ground on all enemies in combat.
+<h2>Design Philosophy:</h2>
+I designed the levels to have multiple routes, where taking dangerous or risky combat scenarios will lead to better rewards and faster paths. It's meant to reward exploration and emphasize replayability.
+<h2>Level Introduction:</h2>
+This level is one of the first where the player gets the ability to double jump. The level has alternate paths that challenge players to use it in creative ways and understand both how high and far the second jump will get you.
+</div>
+<div class = "gifs">
+  <br><br>
+  <img src="img/sliders/ffwtiteration1.png" width="300" height="200"> 
+</div><br></div></div>
+<div class="gamebreakdown"><div class="halfbreakdownback">
+<div class = "allgameiterations">
+<h2>Level Blockout</h2>
+<i>Good: Fun ending section</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i>Bad: Missing detail</i></div><div class = halfbreakdowntext>
+<h3>Layout/Traversal:</h3>
+
+Based on the Adobe Illustrator sketch. 2 layers.<br><br>
+<h3>Combat Sequences/Objectives:</h3>
+Fighting against enemies with a height advantage.<br><br>
+<h3>Theme/Environment:</h3>
+
+Set in the sky.
+</div></div>
+<div class = "gifs">
+  <br>
+  <img src="img/sliders/ffwtiteration2.png" width="300" height="200"> </div>
+
+  <div class="gamebreakdown"><div class="halfbreakdownback">
+    <div class = "allgameiterations">
+<h2>Alternate Paths</h2>
+<i>Good: New Paths</i>&emsp;&emsp;&emsp;&emsp;<i>Bad: Sloppily laid out combat</i></div><div class = halfbreakdowntext>
+
+<h3>Layout/Traversal:</h3>
+
+Added second secret path to level.<br><br>
+
+<h3>Combat Sequences/Objectives:</h3>
+
+Second path has tougher combat.<br><br>
+<h3>Theme/Environment:</h3>
+
+Path goes around flying towers.<br>
+</div>
+<div class = "gifs">
+  <br>
+  <img src="img/sliders/ffwtiteration3.png" width="300" height="200"> </div>
+<div class = "allgameiterations">
+<h2>Extra Platforms</h2>
+<i>Good: Ending area platforms</i>&emsp;&emsp;&emsp;<i>Bad: No buildup</i></div><div class = halfbreakdowntext>
+<h3>Layout/Traversal:</h3>
+
+Final area teaches player about spinning platforms.<br><br>
+
+<h3>Combat Sequences/Objectives:</h3>
+
+No enemies in spinning platform area.<br><br>
+<h3>Theme/Environment:</h3>
+
+Puts player over intense drop.<br></div>
+
+
+<div class = "gifs"><br>
+  <img src="img/sliders/ffwtiteration4.png" width="300" height="200"> </div>
+<div class = "allgameiterations">
+<h2>More Paths</h2>
+<i>Good: Higher alternate path</i>&emsp;&emsp;&emsp;&emsp;&emsp;<i>Bad: Unoptimized Performance</i></div><div class = halfbreakdowntext>
+
+
+<h3>Layout/Traversal:</h3>
+
+Higher path rewards thorough and risky players.<br><br>
+
+<h3>Combat Sequences/Objectives:</h3>
+
+Better weapons and more ammo in higher area.<br><br>
+
+<h3>Theme/Environment:</h3>
+
+Higher area hanging off buildings.<br></div>
+
+<div class = "gifs">
+  <br>
+  <img src="img/sliders/ffwtiteration5.png" width="300" height="200"> </div>
+<div class = "allgameiterations">
+<h2>Final Polish</h2>
+<i>Good: Better fight pacing</i>&emsp;&emsp;&emsp;<i>Bad: Blocked view distance</i></div><div class = halfbreakdowntext>
+
+
+<h3>Layout/Traversal:</h3>
+
+Fights properly segmented with closed off areas.<br><br>
+
+<h3>Combat Sequences/Objectives:</h3>
+
+Enemy/Ammo placements modified.<br><br>
+
+<h3>Theme/Environment:</h3>
+
+Improved sky cubemap.<br><br></div></div>
+</div><div class = "gamebreakdown"><div class="gamebreakdownback">
+  <div class = "allgameiterations">
+<h2>Conclusion</h2></div><div class = "gamebreakdownmargins">
+This is the oldest project in my portfolio but it’s one where I learned the most. This level was initially laid out and then given alternate routes where I was able to experiment with different ways to approach each area.
+<br><br>
+The method worked well in this case but I can see the downsides of not planning out these initial routes, I had to spend much more time with playtesters to figure out how to properly place the routes after the fact.
+<br><br>
+</div></div></div></div>
+</div>
+</div>
+<br><br>
+</div>
+<script>
+  
+  function toggleDiv() {
+    var div = document.getElementById('gamebreakdown');
+    if (div.style.display === 'none') {
+      document.getElementById('gamebreakdown').scrollIntoView();
+      div.style.display = 'none';
+      document.getElementById("showgamebreakdown").innerHTML = "New text!";
+    } else {
+      document.getElementById("showgamebreakdown").innerHTML = "HIDE LEVEL BREAKDOWN";
+      div.style.display = 'block';
+      div = document.getElementById('showgamebreakdown');
+      div.style.display = 'none';
+      div = document.getElementById('contactinfo');
+      div.style.display = 'none';
+      document.getElementById('gamebreakdown').scrollIntoView();
+
+    }
+    
+  }
+</script>
+
+</body>
+</html>
