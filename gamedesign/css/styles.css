@@ -1,0 +1,1357 @@
+
+
+.contactinfo a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+.desc ul{
+    margin-top: 0px;
+}
+.floatleft{
+    width: 900;
+    font-size: 28px;
+    float: left;
+    line-height: 60px;;
+}
+.logofloat{
+    max-height: 210;
+    float: left;
+    box-shadow: 0 0 rgba(0, 0, 0, 0);
+}
+.showgamebreakdown{
+    text-decoration: none;
+    height: 70px;
+    background-image: url("../img/bg.png");
+            background-color: rgba(87, 86, 86, 0.35);
+            background-blend-mode: multiply;
+            background-size: 300%;
+    border-radius: 0 0 15px 15px;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+    border-radius: 25px 25px 25px 25px;
+    width: 680px;;
+    font-size: 45px;
+    margin-top: 170px;
+    float: center;
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+#showgamebreakdown{
+    scroll-behavior: smooth;
+}
+#gamebreakdown{
+    scroll-behavior: smooth;
+    display: none;
+}
+.floatright{
+    width: 300;
+    float: right;
+}
+.centerlogos{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 rgba(0, 0, 0, 0);
+    float: right;
+    width: 1200px;
+}
+.h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 500;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .iterationtitle{
+    margin-top: 23px;
+    font-family: "futura-pt", sans-serif;
+    color: black;
+    background-color: #777;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+
+    
+  }
+  .toptitle a{
+    border-radius: 5px 5px 5px 5px;
+  }
+  .allgameiterations h2{
+    border-radius: 15px 15px 15px 15px;
+    
+  }
+  .iterationtitle h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  .allgameiterations{
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 23px;
+    font-family: "futura-pt", sans-serif;
+    color: black;
+    background-color: #777;
+    border-radius: 15px 15px 0px 0px;
+
+  }
+  .gamebreakdownback{
+    border-radius: 15px 15px 15px 15px;
+   }
+   .gamebreakdownmargins{
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   }
+   
+  .gamebreakdownback p{
+    margin: 20px;
+  }
+
+
+  iframe{
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  img{
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .banner img{
+    box-shadow: 0px 0px rgba(0, 0, 0, 0);
+    float: left;
+  }
+  .halfbreakdownback .allgameiterations{
+    border-radius: 15px 15px 0px 0px;
+    width: 740px;
+  }
+  .allgameiterations h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  td, th {
+    border: 0px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+  }
+
+.contactinfo {
+    font-style: italic;
+    font-size: 15px;
+    float: right;
+    text-align: right;
+    width: 250px;
+    margin-top: 380px;
+}
+
+.contactinfomain {
+    font-style: italic;
+    font-size: 20px;
+    float: right;
+    text-align: right;
+    width: 250px;
+    margin-top: -380px;
+}
+
+  .topImage {
+    border-right: solid 4px black;
+  }
+.gifs {
+    width: 650;
+    float: right;
+}
+.gifs img{
+    width: 650;
+    height: 370;
+    margin-top: 390;
+}
+
+.scrollitemback li{
+    font-size: 18px;
+    text-align: left;
+}
+.gamebreakdown .gifs img{
+    width: 650;
+    height: 370;
+    margin-top: 0;
+}
+.scrollitemback i{
+    font-size: 20px;
+}
+div.scrollitemback h2{
+    font-size: 30px;
+}
+@media only screen and (min-width: 1228px) {
+    div.scrollitem:hover img{
+        animation: scrollitemimg 0.6s 1;
+    }
+    div.scrollitem img{
+        animation: scrollitemimgs 0.6s 1;
+        }
+
+    div.toppart h1 b{
+        animation: fadehijackson 1s 1;
+    }
+    div.toppart h1{
+        animation: fadehijackson 2s 1;
+    }
+    div.toppart i{
+        animation: fadehijackson 3s 1;
+    }
+
+    div.scrollmenu{
+        animation: scrollmenuenter 0.3s 1;
+    }
+
+    div.scrollitem:hover div.scrollitemback{
+
+        animation: scrollitemhoverback 0.6s 1;
+    }
+
+      div.scrollitem div.scrollitemback{
+        animation: scrollitemback 0.6s 1;
+    }
+
+    div.scrollitem:hover li{
+        animation: scrollitemlihover 0.6s 1;
+    }
+
+    div.scrollitem:hover i{
+        animation: scrollitemhover 0.6s 1;
+    }
+
+      div.scrollitem i{
+        animation: scrollitem 0.6s 1;
+    }
+
+    .infopage{
+        animation: fadeintext 3s 1;
+    }
+    .banner img{
+        animation: scrollbanner 1.2s 1;;
+    }
+      .gifs{
+        animation: fadeImage 1s 1;
+      }
+      .desc{
+        animation: filldesc 1s 1;
+      }
+      .gifs{
+        overflow: clip;
+      }
+      .desc{
+        overflow: clip;
+      }
+      div.scrollmenu{
+        overflow: hidden;
+    }
+    .scrollitem{
+        overflow: hidden;
+    }
+    div.scrollitem:hover img{
+        height: 260px;
+    }
+    div.scrollitem img{
+        height: 205px;
+        }
+        div.scrollitem div.scrollitemback{
+            height: 165px;
+            background-image: url("../img/bg.png");
+            background-color: rgba(87, 86, 86, 0.35);
+            background-blend-mode: multiply;
+            background-size: 300%;
+    border-radius: 0 0 15px 15px;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+        }
+        div.scrollitem:hover h2{
+            animation: fadehoverh2 0.6s 1;
+            font-size: 40px;
+        }
+        div.scrollitem:hover li{
+            font-size: 0px;
+        }
+        div.scrollitem:hover div.scrollitemback{
+            height: 125px;
+            background-color: rgb(94, 94, 94);
+        }
+        div.scrollitem:hover i{
+            font-size: 18px;
+        }
+        .slide img:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+}
+
+@keyframes fadehoverh2 {
+    from {font-size: 30px}
+    to {font-size: 40px}
+  }
+
+@keyframes scrollitemimgs {
+    from {height: 260px;}
+    to {height: 205px;}
+  }
+
+@keyframes fadehijackson {
+    from {color: rgb(255, 255, 255, 0);}
+    to {color: rgb(255, 255, 255, 1);}
+  }
+@keyframes scrollitemimg {
+    from {height: 205px;}
+    to {height: 260px;}
+  }
+
+@keyframes scrollmenuenter {
+    from {height: 0px;}
+    to {height: 390px;}
+  }
+
+
+@keyframes scrollitemhoverback {
+    from {height: 165px; background-color: rgba(87, 86, 86, 0.35)}
+    to {height: 125px; background-color: rgb(94, 94, 94, 1);}
+  }
+
+
+
+@keyframes scrollitemback {
+    from {height: 125px; background-color: rgb(94, 94, 94, 1);}
+    to {height: 165px; background-color: rgba(87, 86, 86, 0.35)}
+  }
+
+  .scrollmenu img:hover {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+
+@keyframes scrollitemlihover {
+    from {color: rgb(255, 255, 255, 1);}
+    to {color: rgb(255, 255, 255, 0);}
+  }
+@keyframes scrollitemlioff {
+    from {font-size: 20;}
+    to {font-size: 0;}
+  }
+
+
+@keyframes scrollitemhover {
+    from {font-size: 15px;}
+    to {font-size: 18px;}
+  }
+
+  div.scrollitem i{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@keyframes scrollitem {
+    from {font-size: 18px;}
+    to {font-size: 15px;}
+  }
+
+.envirogifs {
+    width: 650;
+    float: right;
+}
+.envirogifs img{
+    
+    width: 650;
+    height: 355;
+    margin-top: 15;
+    
+}
+.scrollitem img{
+    object-fit: cover;
+}
+
+@keyframes fadeintext {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+
+@keyframes mymove {
+  from {height: 0px;}
+  to {height: 205px;}
+}
+.banner img{
+    object-fit: cover;
+    height: 200px;
+}
+@keyframes scrollbanner {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+@keyframes fadeImage {
+    from {right: 500px; opacity: 0; max-height: 200px}
+    to {right: 0px; opacity: 1; max-height: 1000px}
+  }
+
+  @keyframes filldesc {
+    from {max-height: 200px}
+    to {max-height: 1000px}
+  }
+.gifs iframe {
+    
+    margin-top: 20;
+    width: 650;
+    height: 370;
+    margin-right: 0;
+    float: right;
+    
+}
+h1{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.devinfo {
+    margin: auto;
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+.links{
+    font-size: 30;
+}
+a{
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.infopage{
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.gamebreakdown h2{
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    font-size: 26px;
+}
+
+.gamebreakdownmargins h2{
+    margin-left: -2px;
+   }
+.topbar h2{
+margin-top: 13.920;
+padding-bottom: 6.920;
+}
+.gamebreakdown b{
+    font-size: 20px;
+    font-family: "futura-pt", sans-serif;
+}
+#gamesrotation {
+    width: 100%;
+    height: 420px;
+    background-color: #ff0000;
+
+    overflow: visible;
+    white-space: nowrap;
+}
+
+#gamesrotation .slide {
+    display: inline-block;
+}
+
+#gamesrotation img {
+    width: 280px;
+}
+
+h3 {
+    margin: 0px;
+}
+p{
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.ndadisclaimer{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 12px;
+    text-align: center;
+}
+.infopage h1{
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+.desc {
+    padding: 10px;
+    background-color:rgba(38, 36, 36, 0.8);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px 15px 15px;
+    width: 680px;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.envirodesc {
+    padding: 10px;
+    background-color:rgba(38, 36, 36, 0.8);
+    width: 100%;
+    font-size: 21px;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.gamebreakdown h2{
+    font-size: 50px;
+}
+.gamebreakdown{
+    
+    
+    font-size: 26px;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.gamebreakdownback{
+    background-color:rgba(38, 36, 36, 0.8);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    width: 1400px;
+}
+
+.halfbreakdownback{
+    
+    width: 1400px;
+}
+
+.halfbreakdowntext{
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 0 0 15px 15px;
+    background-color:rgba(38, 36, 36, 0.8);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    width: 740px;
+    height: 280px;
+    margin-bottom: -15px;
+}
+
+.desc ul {
+    color: white;
+}
+.gamebreakdown .gifs{
+    padding: 0px;
+    margin-top: -10px;
+    height: 388px;
+}
+.gamebreakdown .gifs iframe{
+    .gifs iframe {
+        width: 150;
+        height: 0;
+        float: right;
+    }
+}
+.desc img {
+    width: 100px;
+    height: 100px;
+}
+
+.topbar {
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.blockquote {
+    float: left;
+}
+
+.castillolinks ul {
+    background-color: transparent;
+}
+
+blockquote {
+    width: 300px;
+}
+
+.castillolinks ul li {
+    float: left;
+
+    margin-right: 5%;
+}
+
+.castillolinks ul li.right {
+    margin-right: 0;
+}
+
+.header p {
+    text-decoration: none;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.topbar a {
+    position: absolute;
+    right: 10;
+    top: 30;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(91, 91, 91, 0.8);
+    background-blend-mode: multiply;
+    text-align: center;
+    width: 160px;
+    margin-top: 5px;
+}
+
+.Contact a {
+    position: absolute;
+    right: 10;
+    top: 30;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(91, 91, 91, 0.8);
+    background-blend-mode: multiply;
+    text-align: center;
+    width: 160px;
+    margin-top: 35px;
+}
+
+.toptitle {
+    color: white;
+    width: 500px;
+}
+
+.toptitle h1 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: -20px;
+    margin-left: 20px;
+    font-family: "futura-pt", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+
+.toptitle h2 {
+    margin-left: 140px;
+    font-family: "futura-pt", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+
+
+.toptitle img {
+    width: 100;
+    height: 70;
+    float: right;
+}
+
+.projinterrupt {
+    float: left;
+    margin-left: 200px;
+}
+
+.projects {
+    text-align: center;
+    margin-top: -20;
+    float: center;
+    color: grey;
+}
+
+.projects a {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn {
+    float: middle;
+    margin-left: 500px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+body {
+    width: 1400px;
+    margin: auto;
+    backdrop-filter: blur(25px);
+}
+
+.leftbox {
+    margin-left: 150px;
+    width: 300px;
+    float: left;
+}
+
+.midbox {
+    width: 300px;
+    float: left;
+    margin-left: 100px;
+}
+
+
+
+.rightbox {
+    margin-right: 150px;
+    width: 300px;
+    float: right;
+}
+
+.moreinfo {
+    margin-bottom: 300px;
+    font-size: 20px;
+}
+
+.persdesc {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.infopage {
+    width: 1300px;
+    text-align: left;
+    font-size: 23px;
+    font-style: normal;
+
+    float: center;
+    margin: auto;
+    padding: 15px;
+    padding-top: 0px;
+
+    font-family: proxima-nova, sans-serif;
+font-weight: 100;
+font-style: normal;
+
+
+}
+
+
+.ytdesc {
+    float: right;
+    color: white;
+    width: 300px;
+    font-size: 20px;
+    margin-right: 300px;
+}
+
+.ytvid {
+    margin-left: 200px;
+    width: 600px;
+    float: left;
+}
+
+.splitproj {
+    margin-left: 70px;
+}
+
+.projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(91, 91, 91, 0.8);
+    background-blend-mode: multiply;
+    border-radius: 0px 0px 15px 15px ;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    
+}
+div.scrollitemback{
+    border-radius: 0px 0px 15px 15px;
+}
+
+div.scrollitem img{
+    border-radius:  15px 15px 0px 0px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    position:relative;
+    z-index:-999;
+
+}
+.projects li {
+    float: left;
+}
+
+.projects li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top; 
+    animation: scrolldown 1s 1;
+}
+div.toppart{
+    background-image: url("../img/bannerback.png");
+    border-radius: 15px 15px 15px 15px;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top; 
+  animation: scrolldown 1s 1;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+@keyframes scrolldown {
+    from {  background-position: center; }
+    to {  background-position: top; }
+  }
+div.enviroscrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    height: 510px;
+}
+div.scrollitem h2 {
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+div.scrollitem ul {
+    margin-top: 5px;
+    line-height: 30px;
+}
+div.scrollmenu img {
+    width: 330;
+}
+
+div.scrollitem {
+    
+    text-align: center;
+    width: 340;
+    height: 375px;
+
+    
+}
+div.scrollitemback{
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+}
+div.scrollitem li{
+    padding-right: 10px;
+    
+}
+
+div.enviroscrollmenu img {
+    
+    width: 720px;
+    height: 486px;
+}
+
+div.scrollmenu a {
+
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #111111;
+}
+.banner{
+    margin-top: 10px;
+    width: 500px;
+}
+.banner img {
+    max-height: 210px;
+    margin-left: 20px;
+    margin-top: 25px;
+    float: left;
+}
+
+@media only screen and (max-width: 1228px) {
+
+    .gamebreakdown .gifs img{
+        width: 0;</div>
+        height: 0;
+        margin-top: 0;
+        margin-bottom: -100;
+    }
+
+    .gamebreakdown .allgameiterations{
+        margin-top: -300;
+    }
+
+    .desc {
+        font-size: 100px;
+    }
+    .hidemobile{
+        display: none;
+        width: 0px;
+    }
+    
+    .btn {
+        float: middle;
+        margin-left: 400px;
+    }
+
+    .persdesc {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .moreinfo h1 {
+        font-size: 20px;
+    }
+
+    .ytdesc {
+        float: none;
+        margin-left: 0px;
+        width: 600px;
+    }
+
+    .ytvid {
+        float: none;
+        margin-left: 0px;
+        width: 600px;
+    }
+
+    .leftbox {
+        margin-left: 0px;
+        width: 150px;
+        float: left;
+    }
+
+    .midbox {
+        width: 150px;
+        float: left;
+        margin-left: 30px;
+    }
+
+    .rightbox {
+        margin-right: 30px;
+        width: 150px;
+        float: right;
+    }
+
+    .projinterrupt {
+        float: left;
+        margin-left: 0px;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+        width: 100px;
+        font-size: 5px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+    }
+
+    .banner img {
+        width: 600px;
+        height: 150px;
+    }
+
+    body {
+        font-family: sans-serif;
+        width: 600px;
+    }
+
+    .toptitle h1 {
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+
+    .toptitle h2 {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    .toptitle {
+        background-color: black;
+        margin-bottom: 40px;
+        color: white;
+    }
+
+    .toptitle img {
+
+        margin-right: 120px;
+        width: 100;
+        height: 70;
+        margin-left: 0px;
+        float: right;
+    }
+
+    .projects {
+        margin-top: -40;
+        float: top;
+        background-color: black;
+        
+    }
+
+    .projects a {
+        font-size: 15px;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
+
+
+    .gifs iframe {
+        width: 150;
+        height: 100;
+        float: right;
+    }
+
+    .infopage {
+        width: 600px;
+    }
+
+    div.scrollmenu {
+        overflow: scroll;
+        white-space: pre-wrap;
+        display: flex;
+        justify-content: left;
+        height: 270;
+    }
+
+    div.scrollmenu img {
+        width: 170;
+        height: 260
+    }
+    div.scrollitem{
+        height: 100;
+        margin-top: 100px;
+    }
+    .gifs {
+        width: 600px;
+        height: 100px;
+        float: none;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .envirogifs {
+        width: 600px;
+        height: 100px;
+        float: none;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1225px) {
+
+    .roles ul{
+        list-style-type: none;
+    }
+    
+    .topbar {
+        background-color: black;
+        width: 1088;
+        height: 240;
+    }
+
+    div.scrollitem{
+        margin-top: 100px;
+    }
+    div.scrollitem a{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 280px;
+        
+    }
+    div.scrollitem img{
+        margin-top: 10px;
+        
+    }
+    div.scrollitemback{
+        height: 300px;
+    }
+    div.scrollmenu img {
+        width: 100%;
+    }
+
+    div.scrollmenu ul{
+        font-size: 10px;
+    }
+
+    div.scrollmenu li{
+        font-size: 20px;
+        margin-top: -20px;
+        margin-bottom: 0px;
+    }
+
+    div.scrollitemback i{
+        font-size: 20px;
+    }
+    
+    div.scrollitemback h2{
+        font-size: 30px;
+        margin-bottom: -25px;
+    }
+
+    .banner{
+        width: 0;
+        height: 0;
+
+    }
+    .banner img{
+        width: 0;
+        height: 0;
+    }
+    div.scrollmenu {
+        overflow: scroll;
+        white-space: pre-wrap;
+        display: flex;
+        justify-content: left;
+        width: 1088;
+        height: 750;
+        overflow-y: hidden;
+        font-size: 10px;
+    }
+    .projects .hidemobile{
+        display: none;
+        width: 0px;
+    }
+    
+    body {
+        width: 1088;
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .infopage {
+        width: 800px;
+        font-size: 20px
+    }
+
+    li a {
+        font-style: bold;
+        font-size: 25px;
+    }
+
+    .gifs {
+        width: 1088px;
+    }
+
+    .envirogifs {
+        width: 1088px;
+        height: 500px;
+    }
+    .hidemobile {
+        display:none;
+        width: 0px;
+    }
+    .hidemobile a {
+        width: 0px;
+    }
+    .hidemobile ul {
+        width: 0px;
+    }
+    .envirogifs img{
+        width: 1088px;
+        height: 500px;
+    }
+
+    .gifs iframe {
+        width: 1088;
+        height: 612;        
+    }
+
+    .desc {
+        width: 1000px;
+        margin: 44px;
+        font-size: 53px
+    }
+    .gamebreakdown{
+        width: 1000px;
+            margin: 44px;
+            font-size: 40px
+    }
+    .gamebreakdown h2{
+        font-size: 50px;
+        width: 100px;
+    }
+    .gamebreakdown .gifs {
+        width: 980px;
+        margin: 0px;
+    }
+    .gamebreakdown iframe{
+        width: 980px;
+        margin: 0px;
+    }
+    .desc ul {
+        font-size: 40;
+    }
+    .roles{
+        width: 500px;
+        
+    }
+    .gamebreakdown h1{
+        font-size: 75px;
+    }
+
+    .roles ul {
+        font-size: 35;
+        width: 500;
+        
+    }
+    .roles li {
+        width: 500;
+    }
+    ul {
+        font-size: 40;
+    }
+    
+    .desc{
+        
+        font-size: 35px;
+    }
+    .contactinfo a {
+        color: white;
+        text-decoration: none;
+        font-style: italic;
+    }
+    .contactinfo{
+
+        font-size: 0px;
+    }
+    .projects ul {
+        width: 1088;
+    }
+
+    .projects li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 362.5px;
+        text-align: center;
+        font-size: 250px;
+        height: 50;
+        overflow: hidden;
+    }
+
+    .contactinfo {
+        font-style: italic;
+        width: 0;
+        height: 0;
+    }
+
+    .projects a {
+        font-size: 35px;
+        margin-left: 0;
+        width: 362.5px;
+        margin-right: 0;
+    }
+
+    .topbar h1{
+        font-size: 100;
+        width: 900;
+    }
+    .topbar h2{
+        font-size: 40;
+        width: 900;
+        
+        background-color: black;
+        height: 0;
+    }
+
+    .infopage{
+        font-size: 40px;
+    }
+
+    .toptitle a {
+        font-size: 30px;
+        width: 500px;
+        height: 40px;
+        padding: 5px;
+        inline-size: 150px;
+        margin-top: 120px;
+        width: 250px;
+    }
+    
+    .Resume a {
+        font-size: 30px;
+        width: 500px;
+        height: 40px;
+        padding: 5px;
+        padding-top: 1px;
+        inline-size: 150px;
+        margin-top: 60px;
+        width: 250px;
+    }
+    
+    .header p{
+        font-size: 40px;
+    }
+
+    .floatleft{
+        display: none;
+        height: 0px;
+    }
+    .logofloat{
+        display: none;
+        height: 0px;
+    }
+    .floatright{
+        display: none;
+        height: 0px;
+    }
+    .centerlogos{
+        display: none;
+        height: 0px;
+    }
+}

@@ -871,6 +871,16 @@ div.scrollitem {
 
     
 }
+
+div.scrollitemwide {
+    
+    text-align: center;
+    width: 680;
+    height: 175px;
+
+    
+}
+
 div.scrollitemback{
     margin-left: 5px;
     margin-right: 5px;
