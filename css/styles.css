@@ -52,6 +52,13 @@ html {
     scroll-behavior: smooth;
     display: none;
 }
+#showgameplaybreakdown{
+    scroll-behavior: smooth;
+}
+#gameplaybreakdown{
+    scroll-behavior: smooth;
+    display: none;
+}
 .floatright{
     width: 300;
     float: right;

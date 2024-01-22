@@ -194,10 +194,9 @@ body  {
 </div>
 <br>
 <div class = "hidemobile" >
-  <br>
-<a class = "showgamebreakdown" id = "showgamebreakdown" href="#" onclick="toggleDiv()">
-  SHOW LEVEL BREAKDOWN
-</a>
+<a class = "showgamebreakdown" style = "font-size: 17px" id = "showgamebreakdown" href="#" onclick="toggleDiv()">LEVEL DESIGN BREAKDOWN</a>
+<a class = "showgamebreakdown" style = "font-size: 17px" id = "showgameplaybreakdown" href="#" onclick="toggleDiv2()">GAMEPLAY BREAKDOWN</a>
+
 <div id = "gamebreakdown"><br><br>
 <div class="gamebreakdown"><div class="gamebreakdownback">
 <div class = "allgameiterations">
@@ -317,21 +316,128 @@ This method worked well for refining how the player interacted with the level, s
   
   function toggleDiv() {
     var div = document.getElementById('gamebreakdown');
-    if (div.style.display === 'none') {
-      document.getElementById('gamebreakdown').scrollIntoView();
-      div.style.display = 'none';
-      document.getElementById("showgamebreakdown").innerHTML = "New text!";
-    } else {
-      document.getElementById("showgamebreakdown").innerHTML = "HIDE LEVEL BREAKDOWN";
+    document.getElementById("showgamebreakdown").innerHTML = "SWITCH TO LEVEL BREAKDOWN";
+    document.getElementById("showgameplaybreakdown").innerHTML = "SWITCH TO GAMEPLAY BREAKDOWN";
       div.style.display = 'block';
       div = document.getElementById('showgamebreakdown');
       div.style.display = 'none';
+      div.style.marginTop = "0px";
       div = document.getElementById('contactinfo');
       div.style.display = 'none';
       document.getElementById('gamebreakdown').scrollIntoView();
+    div = document.getElementById('showgameplaybreakdown');
+      div.style.display = 'block';
+      div.style.marginTop = "0px";
 
-    }
+      div = document.getElementById('gameplaybreakdown');
+      document.getElementById('gameplaybreakdown').scrollIntoView();
+      div.style.display = 'none';
+  }
+</script>
+<div class = "hidemobile" >
+<div id = "gameplaybreakdown"><br><br>
+  <div class="gamebreakdown"><div class="gamebreakdownback">
+  <div class = "allgameiterations">
+  <h2>Gameplay/Character Controller - CASTILLO: The Nine Circles</h2></div><p>  <div class = "gamebreakdownmargins">
+You must explore each world to collect enough shards to open the next world. Each world has slight Metroidvania elements, unlocking a new ability changes the way you traverse them and opens up previously inaccessible areas.
+  </div>
+  <div class = "gifs">
+  <br><br>
+  <img src="img/gameplaygifs/run.gif" width="300" height="200"> 
+</div><br></div></div>
+<div class="gamebreakdown"><div class="halfbreakdownback">
+<div class = "allgameiterations">
+<h2>Running/Walking</h2>
+<i></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i></i></div><div class = halfbreakdowntext>
+<h3>You walk by default.</h3><br>
+<h3>You can also sprint to go faster.</h3><br>
+<h3>If you build up a combo, your on-foot speed is boosted.</h3><br>
+<h3>You must retain the combo to keep the speed boost.</h3><br>
+</div></div>
+<div class = "gifs">
+  <br>
+  <img src="img/gameplaygifs/slide.gif" width="300" height="200"> </div>
+
+  <div class="gamebreakdown"><div class="halfbreakdownback">
+    <div class = "allgameiterations">
+<h2>Sliding</h2>
+<i></i>&emsp;&emsp;&emsp;&emsp;<i></i></div><div class = halfbreakdowntext>
+
+  <h3>You can crouch normally.</h3><br>
+  <h3>If you hold crouch with previous speed, you can slide.</h3><br>
+  <h3>You will speed up when going down slopes.</h3><br>
+  <h3>You can use it to aim in other directions during combat.</h3><br>
+</div>
+<div class = "gifs">
+  <br>
+  <img src="img/gameplaygifs/zip.gif" width="300" height="200"> </div>
+<div class = "allgameiterations">
+<h2>Ziplines</h2>
+<i></i>&emsp;&emsp;&emsp;<i></i></div><div class = halfbreakdowntext>
+  <h3>Use ziplines to get to hard to reach areas.</h3><br>
+  <h3>Interact with them by standing under the handle.</h3><br>
+  <h3>You're given a brief boost of momentum after letting go.</h3><br>
+  <h3>Ziplines only go one way.</h3><br>
+<br><br>
+</div>
+
+
+<div class = "gifs"><br>
+  <img src="img/gameplaygifs/fall.gif" width="300" height="200"> </div>
+<div class = "allgameiterations">
+<h2>Diving</h2>
+<i></i>&emsp;&emsp;&emsp;&emsp;&emsp;<i></i></div><div class = halfbreakdowntext>
+
+
+<h3>You can crouch while midair to dive.</h3><br>
+
+<h3>Diving increases your falling speed.</h3><br>
+
+<h3>You can dive to dodge projectiles or obstacles.</h3><br>
+
+<h3>An impact animation plays when you hit the ground.</h3><br>
+
+</div>
+
+<div class = "gifs">
+  <br>
+  <img src="img/gameplaygifs/fly.gif" width="300" height="200"> </div>
+<div class = "allgameiterations">
+<h2>Double Jump/Fly</h2>
+<i></i>&emsp;&emsp;&emsp;<i></i></div><div class = halfbreakdowntext>
+
+
+<h3>You can do a midair jump.</h3><br>
+<h3>You can midair jump at any point in your arc.</h3><br>
+<h3>Hold jump while midair to glide.</h3><br>
+<h3>You can only glide for a limited amount of time.</h3><br>
+<br><br></div></div>
+</div><div class = "gamebreakdown"></div></div>
+</div>
+</div>
+<br><br>
+</div></div>
+<script>
+  
+  function toggleDiv2() {
+    var div = document.getElementById('gameplaybreakdown');
+    document.getElementById("showgamebreakdown").innerHTML = "SWITCH TO LEVEL BREAKDOWN";
+    document.getElementById("showgameplaybreakdown").innerHTML = "SWITCH TO GAMEPLAY BREAKDOWN";
+      div.style.display = 'block';
+      div = document.getElementById('showgameplaybreakdown');
+      div.style.display = 'none';
+      div = document.getElementById('contactinfo');
+      div.style.display = 'none';
+      document.getElementById('gameplaybreakdown').scrollIntoView();
+
     
+    div = document.getElementById('showgamebreakdown');
+    
+      div.style.display = 'block';
+      div.style.marginTop = "0px";
+      div = document.getElementById('gamebreakdown');
+      document.getElementById('gamebreakdown').scrollIntoView();
+      div.style.display = 'none';
   }
 </script>
 
