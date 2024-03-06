@@ -1,0 +1,277 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>UEFN | Jackson Clayton - Game Portfolio</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/cgh0mgb.css">
+</head>
+<body>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url("img/uefn/bg.png");
+            background-repeat: no-repeat;
+            color: white;
+            background-size: cover;
+        }
+    </style>
+
+<br>
+    <div class="topbar">
+
+        <div class="toptitle">
+          <div class = "Contact"><a href = "about.html">Contact</a></div>
+          <div class = "Resume"><a href = "Resume.pdf">Resume</a></div>
+
+<h1>Jackson Clayton</h1>
+<h2>Game Portfolio</h2>
+
+
+
+        </div>
+    </div>
+    <div class="projects">
+        <div class="projinterrupt">
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio5.html">Castillo</a></li>
+          <li><a href="portfolio4.html">Canvas Carnage</a></li>
+          <li><a href="portfolio1.html">HyperJustice</a></li>
+          <li><a href="portfolio2.html">Flying Frags</a></li>
+          <div class = "hidemobile" >
+            <li><a href="portfolio6.html">UEFN</a></li>
+            <li><a href="portfolio7.html">Bo3 Mod Tools</a></li></div>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="img/uefn/banner.png">
+    </div>
+    <div class="gifs">
+        <iframe src="https://www.youtube.com/embed/videoseries?si=mpVmrQq9PC6ewIxW&amp;list=PLo1PT3AVEADHvvxnPiZTM4eYXJbIaYdZ_&loop=1&mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <style>
+            * {box-sizing: border-box;}
+            .img-comp-container {
+              position: relative;
+              height: 200px; 
+            }
+            .img-comp-img {
+              position: absolute;
+              width: auto;
+              height: auto;
+              overflow:hidden;
+            }
+            .img-comp-img img {
+              display:block;
+              vertical-align:middle;
+            }
+            .img-comp-slider {
+              position: absolute;
+              z-index:9;
+              cursor: ew-resize;
+              width: 40px;
+              height: 40px;
+              background-color: #2196F3;
+              opacity: 0.7;
+              border-radius: 50%;
+              margin-top: 185px;
+            }
+            @media only screen and (max-width: 1225px) {
+  * {box-sizing: border-box;}
+  .img-comp-container {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-img {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-img img {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .img-comp-slider {
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  }
+            </style>
+            <script>
+            function initComparisons() {
+              var x, i;
+              x = document.getElementsByClassName("img-comp-overlay");
+              for (i = 0; i < x.length; i++) {
+                compareImages(x[i]);
+              }
+              function compareImages(img) {
+                var slider, img, clicked = 0, w, h;
+                w = img.offsetWidth;
+                h = img.offsetHeight;
+                img.style.width = (w / 2) + "px";
+                slider = document.createElement("DIV");
+                slider.setAttribute("class", "img-comp-slider");
+                img.parentElement.insertBefore(slider, img);
+                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+                slider.addEventListener("mousedown", slideReady);
+                window.addEventListener("mouseup", slideFinish);
+                slider.addEventListener("touchstart", slideReady);
+                window.addEventListener("touchend", slideFinish);
+                function slideReady(e) {
+                  e.preventDefault();
+                  clicked = 1;
+                  window.addEventListener("mousemove", slideMove);
+                  window.addEventListener("touchmove", slideMove);
+                }
+                function slideFinish() {
+                  clicked = 0;
+                }
+                function slideMove(e) {
+                  var pos;
+                  if (clicked == 0) return false;
+                  pos = getCursorPos(e)
+                  if (pos < 0) pos = 0;
+                  if (pos > w) pos = w;
+                  slide(pos);
+                }
+                function getCursorPos(e) {
+                  var a, x = 0;
+                  e = (e.changedTouches) ? e.changedTouches[0] : e;
+                  a = img.getBoundingClientRect();
+                  x = e.pageX - a.left;
+                  x = x - window.pageXOffset;
+                  return x;
+                }
+                function slide(x) {
+                  img.style.width = x + "px";
+                  slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+                }
+              }
+            }
+            </script>
+            
+            <script>
+            initComparisons();
+            </script>
+
+    </div>
+    
+        <div class="desc">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+          
+          <i>TLDR: VR Game Prototype</i><br><br>
+          VR Game where you play as a giant fish escaping other Kaiju created with Game Design Club members. I worked as the designer/programmer.
+          <br><br>
+        <b>Responsibilities:</b><ul>
+              <li>Create a VR game that works better in VR.</li>
+              <li>Write up a Game Design Document.</li>
+              <li>Have the game run on my Oculus Quest 2 via Quest Link.</li>
+              </ul>
+    </div>
+     <div class = "hidemobile"><br>
+    <a class = "showgamebreakdown" id = "showgamebreakdown" href="#" onclick="toggleDiv()">
+      SHOW GAME DESIGN DOCUMENT
+    </a>
+    <div id = "gamebreakdown">
+    <div class="gamebreakdown"><div class="gamebreakdownback">
+    <div class = "gifs">
+      <br><br>
+      <img src="img/sliders/poi1.jpg" width="300" height="200"> 
+    </div><br></div></div>
+    <div class="gamebreakdown"><div class="halfbreakdownback">
+    <div class = "allgameiterations">
+    <h2>GAME CONCEPT</h2>
+    </div><div class = halfbreakdowntext>
+      VR game combining exploration, puzzles, and action, where players control a fish-operated robot, changing perspectives by lifting their fishbowl to navigate and using a laser cube for defense.    </div>
+    <div class = "gifs">
+      <br>
+      <img src="img/sliders/poi2.jpg" width="300" height="200"> 
+    </div></div></div>
+    <div class="gamebreakdown"><div class="halfbreakdownback">
+    <div class = "allgameiterations">
+    <h2>TARGET AUDIENCE</h2>
+    </div><div class = halfbreakdowntext>
+      Players who enjoy innovative gameplay mechanics, combining exploration, strategy, and action.
+    </div><br>
+    <div class = "gifs">
+      <br>
+      <img src="img/sliders/poi3.jpg" width="300" height="200"> 
+    </div></div></div>
+    <div class="gamebreakdown"><div class="halfbreakdownback">
+    <div class = "allgameiterations">
+    <h2>GAMEPLAY MECHANICS</h2>
+    </div><div class = halfbreakdowntext>
+      Control a robot from a fish's perspective inside a bowl. Navigate by lifting the bowl for movement, drop it to grab a laser cube for combat against enemies, and solve puzzles by altering perspectives. Balance moving and fighting for strategic gameplay.      <br><br>
+    </div><br>
+    <div class = "gifs">
+      <br>
+      <img src="img/sliders/poi4.jpg" width="300" height="200"> 
+    </div><br></div></div>
+    <div class="gamebreakdown"><div class="halfbreakdownback">
+    <div class = "allgameiterations">
+    <h2>GAME WORLD</h2>
+    </div><div class = halfbreakdowntext>
+      A linear, kaiju-infested city.
+    </div>
+    <div class = "gifs">
+      <img src="img/sliders/poi5.jpg" width="300" height="200"> </div>
+    <div class = "allgameiterations">
+      <h2>ENEMIES</h2>
+    </div><div class = halfbreakdowntext>
+      Kaiju enemies with diverse strengths and tactics challenge players to strategically defeat them using the laser cube.
+      <br><br>
+    </div>
+    <br>
+    <div class = "gifs">
+      <br>
+      <img src="img/sliders/poi6.jpg" width="300" height="200"> 
+    </div></div></div>
+    <div class="gamebreakdown"><div class="halfbreakdownback">
+    <div class = "allgameiterations">
+    <h2>OBJECTIVES</h2>
+    </div><div class = halfbreakdowntext>
+      Navigate, solve puzzles, and combat kaiju.
+    </div><br>
+   
+    
+    
+    </div>
+    <br><br>
+    </div>
+    <script>
+      
+      function toggleDiv() {
+        var div = document.getElementById('gamebreakdown');
+        if (div.style.display === 'none') {
+          document.getElementById('gamebreakdown').scrollIntoView();
+          div.style.display = 'none';
+          document.getElementById("showgamebreakdown").innerHTML = "New text!";
+        } else {
+          document.getElementById("showgamebreakdown").innerHTML = "HIDE LEVEL BREAKDOWN";
+          div.style.display = 'block';
+          div = document.getElementById('showgamebreakdown');
+          div.style.display = 'none';
+          div = document.getElementById('contactinfo');
+          div.style.display = 'none';
+          document.getElementById('gamebreakdown').scrollIntoView();
+    
+        }
+        
+      }
+    </script>
+    
+    </body>
+    </html>
