@@ -200,7 +200,7 @@ table {
 div.scrollitemback h2{
     font-size: 30px;
 }
-@media only screen and (min-width: 1228px) {
+@media only screen {
     div.scrollitem:hover img{
         animation: scrollitemimg 0.6s 1;
     }
