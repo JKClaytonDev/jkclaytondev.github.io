@@ -926,8 +926,8 @@ li a:hover {
     float: left;
 }
 @media (min-width: 600px) and (orientation:portrait) {
-    body {
-        transform: scale(0.72);
+    html {
+        transform: scale(0.71);
         transform-origin: 0 0;
     }
 }
