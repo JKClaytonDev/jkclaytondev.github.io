@@ -845,7 +845,7 @@ div.toppart{
   background-position: top; 
   animation: scrolldown 1s 1;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
-    height: 300px;
+    height: 150px;
 }
 @keyframes scrolldown {
     from {  background-position: center; }
