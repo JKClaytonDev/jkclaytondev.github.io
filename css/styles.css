@@ -926,9 +926,9 @@ li a:hover {
     margin-top: 25px;
     float: left;
 }
-@media (min-width: 600px) and (orientation:portrait) {
+@media (orientation:portrait) {
     body {
-        transform: scale(0.71);
+        transform: scale(0.31);
         transform-origin: 0 0;
     }
 }
@@ -973,7 +973,4 @@ body {
     width: 160px;
     padding: 1px 0; /* Add padding for better visual */
     box-sizing: border-box; /* Ensures padding doesn't affect overall width */
-}
-
-.Resume a {
 }
