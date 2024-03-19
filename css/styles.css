@@ -93,10 +93,7 @@ table {
   .toptitle a{
     border-radius: 5px 5px 5px 5px;
   }
-  .allgameiterations h2{
-    border-radius: 15px 15px 15px 15px;
-    
-  }
+
   .iterationtitle h1{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -140,7 +137,7 @@ table {
   }
   .halfbreakdownback .allgameiterations{
     border-radius: 15px 15px 0px 0px;
-    width: 740px;
+    width: 1400px;
   }
   .allgameiterations h1{
     margin-top: 0px;
@@ -190,11 +187,12 @@ table {
     font-size: 18px;
     text-align: left;
 }
+
 .gamebreakdown .gifs img{
-    width: 650;
-    height: 370;
-    margin-top: 0;
-    float: right;
+    width: 1400;
+    height: 787.5;
+    margin-top: -40px;
+    float: center;
 }
 .scrollitemback i{
     font-size: 20px;
@@ -560,8 +558,7 @@ font-style: normal;
     border-radius: 0 0 15px 15px;
     background-color:rgba(38, 36, 36, 0.8);
     box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
-    width: 740px;
-    height: 280px;
+    width: 1400px;
     margin-bottom: -15px;
 }
 
@@ -570,8 +567,10 @@ font-style: normal;
 }
 .gamebreakdown .gifs{
     padding: 0px;
-    margin-top: -10px;
-    height: 388px;
+    margin-top: 0px;
+    width: 1400px;
+    height: 787.5px;
+    margin-left: 0px;
 }
 .gamebreakdown .gifs iframe{
     .gifs iframe {
@@ -975,3 +974,9 @@ body {
 @media (orientation:portrait) {
 
 }
+
+.allgameiterations h2{
+    border-radius: 15px 15px 15px 15px;
+    font-size: 120px;
+    
+  }
