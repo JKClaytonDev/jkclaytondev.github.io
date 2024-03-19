@@ -926,15 +926,7 @@ li a:hover {
     margin-top: 25px;
     float: left;
 }
-@media (orientation:portrait) {
-    body {
-        transform: scale(0.31);
-        transform-origin: 0 0;
-    }
-    .gamebreakdown img{
-        display: none;
-    }
-}
+
 
 body {
     box-sizing: border-box;
@@ -976,4 +968,16 @@ body {
     width: 160px;
     padding: 1px 0; /* Add padding for better visual */
     box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+@media (orientation:portrait) {
+    body {
+        transform: scale(0.31);
+        transform-origin: 0 0;
+    }
+    .gamebreakdown img{
+        display: none;
+        width: 0;
+        height: 0;
+    }
 }
