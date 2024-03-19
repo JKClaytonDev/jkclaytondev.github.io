@@ -931,3 +931,30 @@ li a:hover {
         transform-origin: 0 0;
     }
 }
+
+body {
+    box-sizing: border-box;
+  }
+
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .scrollitem, .scrollitem img {
+      width: 100%; /* Adjust this as necessary */
+      max-width: 100%; /* Ensure images do not overflow */
+    }
+  }
+
+  .scrollmenu {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping onto the next line */
+    overflow-x: auto; /* Allows horizontal scrolling if necessary */
+  }
+  
+  .scrollitem {
+    flex: 0 0 auto; /* Prevents flex items from growing or shrinking */
+  }
+  
+  .scrollitem img {
+    width: 100%; /* Makes image responsive within its container */
+    max-width: 100%; /* Ensures image does not overflow its container */
+  }

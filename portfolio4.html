@@ -298,6 +298,14 @@
         }
         
       }
+      window.addEventListener('load', function() {
+  if (window.innerWidth >= 600 && window.matchMedia("(orientation: portrait)").matches) {
+  console.log('Load event triggered');
+  toggleDiv();
+  document.body.style.transform = "scale(0.3)";
+        document.body.style.transformOrigin = "0 0";
+  }
+});
     </script>
     <div class = "hidemobile">
       <br><iframe src="https://store.steampowered.com/widget/2864100/" frameborder="0" width="686" height="190"></iframe>

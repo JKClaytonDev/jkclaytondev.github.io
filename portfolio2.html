@@ -342,6 +342,12 @@ The method worked well in this case but I can see the downsides of not planning 
     }
     
   }
+window.addEventListener('load', function() {
+  if (window.innerWidth >= 600 && window.matchMedia("(orientation: portrait)").matches) {
+  console.log('Load event triggered');
+  toggleDiv();
+  }
+});
 </script><br>
 <div class = "hidemobile">
   <iframe src="https://store.steampowered.com/widget/1516960/" frameborder="0" width="686" height="190"></iframe>

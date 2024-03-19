@@ -275,6 +275,14 @@
         }
         
       }
+      window.addEventListener('load', function() {
+  if (window.innerWidth >= 600 && window.matchMedia("(orientation: portrait)").matches) {
+  console.log('Load event triggered');
+  toggleDiv();
+  document.body.style.transform = "scale(0.3)";
+        document.body.style.transformOrigin = "0 0";
+  }
+});
     </script>
     
     </body>

@@ -335,6 +335,12 @@ This was a very cut and dried level but has worked well as something I can go ba
     }
     
   }
+window.addEventListener('load', function() {
+  if (window.innerWidth >= 600 && window.matchMedia("(orientation: portrait)").matches) {
+  console.log('Load event triggered');
+  toggleDiv();
+  }
+});
 </script><br>
 <div class = "hidemobile">
   <iframe src="https://store.steampowered.com/widget/1831780/" frameborder="0" width="686" height="190"></iframe>
