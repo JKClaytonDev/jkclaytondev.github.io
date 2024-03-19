@@ -178,11 +178,12 @@ table {
 .gifs {
     width: 650;
     float: right;
+    overflow: hidden;
 }
 .gifs img{
     width: 650;
     height: 370;
-    margin-top: 390;
+    float: right;
 }
 
 .scrollitemback li{
