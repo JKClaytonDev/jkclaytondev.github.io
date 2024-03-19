@@ -931,6 +931,9 @@ li a:hover {
         transform: scale(0.31);
         transform-origin: 0 0;
     }
+    .gamebreakdown img{
+        display: none;
+    }
 }
 
 body {
