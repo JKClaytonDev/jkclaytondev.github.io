@@ -653,6 +653,7 @@ blockquote {
     width: 500px;
 }
 
+
 .toptitle h1 {
     font-size: 50px;
     margin-top: 0;
@@ -958,3 +959,21 @@ body {
     width: 100%; /* Makes image responsive within its container */
     max-width: 100%; /* Ensures image does not overflow its container */
   }
+
+  .Contact a, .Resume a {
+    position: fixed; /* Change from absolute to fixed */
+    right: 20px; /* Adjusted to 20px from the right edge for some spacing */
+    top: 30px; /* Keep as is or adjust to your liking */
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(91, 91, 91, 0.8);
+    background-blend-mode: multiply;
+    text-align: center;
+    width: 160px;
+    padding: 1px 0; /* Add padding for better visual */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+.Resume a {
+}
