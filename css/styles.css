@@ -971,13 +971,5 @@ body {
 }
 
 @media (orientation:portrait) {
-    body {
-        transform: scale(0.31);
-        transform-origin: 0 0;
-    }
-    .gamebreakdown img{
-        display: none;
-        width: 0;
-        height: 0;
-    }
+
 }
